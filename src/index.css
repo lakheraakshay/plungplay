@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.home-slider-bg {
+  background-image: url('/src/ui/assets/home/home-slider-bg.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+}
+
+.colred{
+  /* color: red; */
+  /* color:#323131; */
+}
+.redcol {color: #F1592A;}
+.blueback{
+  background:#1D1964;
+  border: 1px solid #1D1964 !important;
+}

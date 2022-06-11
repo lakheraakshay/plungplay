@@ -24,7 +24,7 @@ const Distributor = () => {
       >
         <Grid item xl="6" md="6" xs="12">
           <img
-            src={require("../../assets/home/Advantages.jpeg")}
+            src={require("../../assets/home/infographic.png")}
             alt=""
             style={{ width: "100%", height: "700px", marginBottom: "-7px" }}
           />

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Box } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import svname from "../../assets/home/svname.jpg";
+import sv from "../../assets/home/sv2.jpg";
 import pramod from "../../assets/home/pramod1.jpg";
 import aditya from "../../assets/home/aditya1.jpg";
 
@@ -78,7 +79,7 @@ const data = [
   {
     name: "S. Venkateswaran",
     role: "Managing Partner- Group",
-    img: svname,
+    img: sv,
   },
   {
     name: "Aditya Vikram Gupta",

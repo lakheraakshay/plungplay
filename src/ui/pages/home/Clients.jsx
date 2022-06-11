@@ -59,31 +59,31 @@ const Clients = () => {
         <br />
         <br />
         <Slider {...settings}>
-          <Box>
-            <img src={require("../../assets/home/brands (1).png")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/brands (1).png")} alt="" width={'200px'}  />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brands (2).png")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/brands (2).png")} alt="" width={'200px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brands (3).png")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/brands (3).png")} alt="" width={'200px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brands (4).png")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/cravova.jpg")} alt="" width={'200px'} height={'150px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brands5.jpg")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/naturup.webp")} alt="" width={'200px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brand6.jpeg")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/brand6.jpeg")} alt="" width={'200px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brand8.jpg")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/alphavedic.webp")} alt="" width={'200px'} />
           </Box>
-          <Box>
-            <img src={require("../../assets/home/brands7.jpeg")} alt="" width={'200px'} height={'100px'} />
+          <Box >
+            <img src={require("../../assets/home/stirred.webp")} alt="" width={'200px'} />
           </Box>
-          <Box>
+          <Box >
             <img src={require("../../assets/home/brand9.jpeg")} alt="" width={'200px'} height={'100px'} />
           </Box>
         </Slider>

@@ -27,3 +27,8 @@ body {
   background:#1D1964;
   border: 1px solid #1D1964 !important;
 }
+
+.whiteback{
+  background:#fff;
+  /* border: 1px solid #1D1964 !important; */
+}

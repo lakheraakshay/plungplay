@@ -26,7 +26,7 @@ const Manufacturer = () => {
           <img
                 src={require("../../assets/home/problemstatement.png")}
                 alt=""
-            style={{ width: "100%", height: 550 }}
+            style={{ width: '100%', height: 550 }}
           />
         </Grid>
         <Grid item xl="6" md="6" xs="12" style={{ padding: "30px" }}>

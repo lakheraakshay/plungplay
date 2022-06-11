@@ -61,7 +61,7 @@ const ProductSlider = () => {
               </>
             ))}
           </Slider>
-          <br />
+          {/* <br />
           <br /> <br /> <br />
           <Grid
             container
@@ -174,9 +174,8 @@ const ProductSlider = () => {
                 </Typography>
               </Box>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Container>
-        <br />
         <br />
       </Box>
     </>

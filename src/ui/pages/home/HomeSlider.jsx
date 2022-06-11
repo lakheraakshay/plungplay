@@ -38,7 +38,7 @@ const HomeSlider = () => {
           <img
             src={require("../../assets/home/Coconut.png")}
             alt=""
-            style={{ height: "60vh" }}
+            style={{ paddingTop: 80 }}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -52,7 +52,7 @@ const HomeSlider = () => {
           <img
             src={require("../../assets/home/showprod4.png")}
             alt=""
-            // style={{ height: "60vh" }}
+            style={{ paddingTop: 30 }}
           />
         </SwiperSlide>
         <SwiperSlide>

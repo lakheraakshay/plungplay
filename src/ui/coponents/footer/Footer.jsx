@@ -6,7 +6,7 @@ const Footer = () => {
     const navigate = useNavigate()
     return (
         <>
-            <Box sx={{ height: 'auto', backgroundColor: '#000', padding: { md: '70px', xs: '30px' } }}>
+            <Box sx={{ height: 'auto', backgroundColor: '#4A4A4A', padding: { md: '70px', xs: '30px' } }}>
                 <Container fixed>
                     <Grid
                         container

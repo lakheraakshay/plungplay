@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import svname from "../../assets/home/svname.jpg";
-import sv from "../../assets/home/sv2.jpg";
+import sv from "../../assets/home/sv.jpeg";
 import pramod from "../../assets/home/pramod1.jpg";
 import aditya from "../../assets/home/aditya1.jpg";
 
@@ -42,13 +42,17 @@ const TeamCard = () => {
             <Box
               sx={{ width: { md: "262px", xs: "100%" }, textAlign: "center" }}
             >
-              <img src={item?.img} alt="" style={{ width: "100%" }} />
+              <img
+                src={item?.img}
+                alt=""
+                style={{ width: "100%", height: "300px" }}
+              />
               <Box
                 sx={{
                   background: "#13104B",
-                  padding: "20px",
+                  padding: " 20px 10px",
                   marginTop: "-10px",
-                  height: { md: "130px", xs: 'auto' },
+                  height: { md: "70px", xs: "auto" },
                 }}
               >
                 <Typography
@@ -74,7 +78,7 @@ const data = [
   {
     name: "Divyashikha Gupta",
     role: "CEO & Managing Director-Group",
-    img: svname,
+    img: sv,
   },
   {
     name: "S. Venkateswaran",

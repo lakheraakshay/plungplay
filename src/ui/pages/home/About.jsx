@@ -9,7 +9,7 @@ const About = () => {
       <Box
         sx={{
           background:
-            " linear-gradient(255.31deg, #1F1B6D 2.72%, #1A165A 86.9%)",
+            "#fff",
           height: { md: "100vh", xs: "auto" },
         }}
       >
@@ -22,22 +22,22 @@ const About = () => {
           wrap="wrap"
           sx={{ height: { md: "100vh", xs: "auto" } }}
         >
-          <Grid item xl="5" md="5" xs="12">
+          <Grid item xl="6" md="6" xs="12">
             <img
               src={require("../../assets/home/about.png")}
               alt=""
               style={{ height: "100vh", width: "100%", marginBottom: "-5px" }}
             />
           </Grid>
-          <Grid item xl="7" md="7" xs="12">
+          <Grid item xl="6" md="6" xs="12">
             <Box sx={{ padding: { md: "10%", xs: "30px" } }}>
-              <Typography fontSize="32px" fontWeight="700" color="#fff">
+              <Typography fontSize="32px" fontWeight="700" color="#000">
                 About Us
               </Typography>
               <img src={require("../../assets/commons/line.png")} alt="" />
               <br />
               <br />
-              <Typography variant="body1" color="#fff">
+              <Typography variant="body1" color="#000">
                 <span className="colred">
                   Stalwart Business Consortium LLP (SBCL)
                 </span>{" "}

@@ -162,7 +162,7 @@ const About = () => {
         </Grid>
         <Grid item xl="6" md="6" xs="12" sx={{ background: "#EAEAEA" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#323131">
+            <Typography fontSize="20px" color="#323131" padding="20px">
               <div style={{ fontWeight: "bold", marginBottom: "40px", fontSize: 32 }}>
                 At Stalwart, we are building:
               </div>

@@ -15,6 +15,6 @@ export const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down(500)]: {
          width:'80%'
         },
-        marginLeft: '-100px'
+        marginLeft: '0'
     }
 }));

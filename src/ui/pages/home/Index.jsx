@@ -30,10 +30,10 @@ const Home = () => {
             md="6"
             xs="12"
             sx={{
-              paddingLeft: { md: "50px", xs: "50px" },
-              paddingRight: { md: "50px", xs: "50px" },
-              paddingTop: { md: "50px", xs: "50px" },
-              paddingBottom: "0px",
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              paddingTop: { md: "50px", xs: "10px" },
+              paddingBottom: { md: "0", xs: "10px" },
             }}
           >
             <Grid
@@ -65,9 +65,9 @@ const Home = () => {
                 md="8"
                 xs="12"
                 sx={{
-                  paddingLeft: "40px",
-                  paddingTop: "40px",
-                  paddingBottom: "80px",
+                  paddingLeft: { md: "40px", xs: '0px' },
+                  paddingTop: { md: "40px", xs: '0px' },
+                  paddingBottom: {md:"80px",xs:'20px'},
                 }}
               >
                 <div>

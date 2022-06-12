@@ -62,55 +62,45 @@ const Header = () => {
           background: "#fff",
           paddingTop: "10px",
           paddingBottom: "10px",
-          marginLeft: "0px !important",
-          marginRight: "0px !important",
         }}
       >
-        <Container
-          fixed
-          style={{
-            marginLeft: "0px !important",
-            marginRight: "0px !important",
-          }}
-        >
-          <Box display="flex">
-            <Box flexGrow="1">
-              <NavLink to="/">
-                <img
-                  src={require("../../assets/commons/logo.png")}
-                  alt=""
-                  className={classes.logoImg}
-                />
-              </NavLink>
-            </Box>
-            {!isMobile && (
-              <Toolbar style={{marginRight: '-100px'}}>
-                {Links.map((item, i) => (
-                  <NavLink
-                    to={item.url}
-                    className={classes.heading}
-                    style={({ isActive }) => ({
-                      color: "#000",
-                      fontWeight: isActive ? "800" : "500",
-                      marginLeft: "20px",
-                      border: isActive && "1px solid #F1592A",
-                      padding: "10px",
-                      borderRadius: "5px",
-                      background: isActive && "#F1592A",
-                    })}
-                  >
-                    {item.title}
-                  </NavLink>
-                ))}
-              </Toolbar>
-            )}
-            {isMobile && (
-              <IconButton onClick={handleDrawer(true)}>
-                <MenuOpenRoundedIcon color="primary" />
-              </IconButton>
-            )}
+        <Toolbar>
+          <Box flexGrow="1">
+            <NavLink to="/">
+              <img
+                src={require("../../assets/commons/logo.png")}
+                alt=""
+                className={classes.logoImg}
+              />
+            </NavLink>
           </Box>
-        </Container>
+          {!isMobile && (
+            <Toolbar>
+              {Links.map((item, i) => (
+                <NavLink
+                  to={item.url}
+                  className={classes.heading}
+                  style={({ isActive }) => ({
+                    color: "#000",
+                    fontWeight: isActive ? "800" : "500",
+                    marginLeft: "20px",
+                    border: isActive && "1px solid #F1592A",
+                    padding: "10px",
+                    borderRadius: "5px",
+                    background: isActive && "#F1592A",
+                  })}
+                >
+                  {item.title}
+                </NavLink>
+              ))}
+            </Toolbar>
+          )}
+          {isMobile && (
+            <IconButton onClick={handleDrawer(true)}>
+              <MenuOpenRoundedIcon color="primary" />
+            </IconButton>
+          )}
+        </Toolbar>
       </AppBar>
 
       <Drawer

@@ -19,7 +19,7 @@ const About = () => {
           justifyContent="space-between"
           alignItems="center"
           alignContent="center"
-          wrap="wrap"
+          flexWrap="wrap-reverse"
           sx={{ height: { md: "100vh", xs: "auto" } }}
         >
           <Grid item xl="6" md="6" xs="12">

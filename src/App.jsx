@@ -11,7 +11,10 @@ import Header from "./ui/coponents/header/Header";
 import Footer from "./ui/coponents/footer/Footer";
 import About from "./ui/pages/about/Index";
 import Products from "./ui/pages/products/Products";
-import Details from "./ui/pages/products/Details";
+import Beaverage from './ui/pages/products/Beaverage'
+import Food from './ui/pages/products/Food'
+import MouthFresh from './ui/pages/products/MouthFresh'
+import PersonalCare from './ui/pages/products/PersonalCare'
 import Manufacturer from "./ui/pages/distriibutor/Manufacturer";
 import Distributor from "./ui/pages/distriibutor/Distributor";
 import Contact from "./ui/pages/contact/Contact";
@@ -44,7 +47,10 @@ function App() {
                 </Route> */}
                 <Route path="about-us" element={<About />} />
                 <Route path="products" element={<Products />} />
-                <Route path="details" element={<Details />} />
+                <Route path="products/food" element={<Food />} />
+                <Route path="products/beverage" element={<Beaverage />} />
+                <Route path="products/mouth-freshner" element={<MouthFresh />} />
+                <Route path="products/personal-care" element={<PersonalCare />} />
                 <Route path="manufactures" element={<Manufacturer />} />
                 <Route path="distributor" element={<Distributor />} />
                 <Route path="contact-us" element={<Contact />} />

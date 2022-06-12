@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,  Grid } from "@mui/material/";
+import { Box, Container, Grid } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 
 const Manufacturer = () => {
@@ -20,21 +20,63 @@ const Manufacturer = () => {
         alignItems="stretch"
         alignContent="stretch"
         wrap="wrap"
-        // sx={{ marginTop: "-8px" }}
+        sx={{ marginTop: "-8px" }}
       >
-        <Grid item xl="6" md="6" xs="12">
+        <Grid item xl="7" md="7" xs="12">
           <img
-                src={require("../../assets/home/problemstatement.png")}
-                alt=""
-            style={{ width: '100%', height: 550 }}
+            src={require("../../assets/home/Manufacturer.png")}
+            alt=""
+            style={{ width: "100%", height: 720 }}
           />
         </Grid>
-        <Grid item xl="6" md="6" xs="12" style={{ padding: "30px" }}>
-          <Typography fontSize="20px" fontWeight="600" color="initial">
-            Why should a BRAND associate with Stalwart:
-          </Typography>
-          <br />
-          <Typography
+        <Grid item xl="5" md="5" xs="12" style={{ background: "#f6f6f6" }}>
+          <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
+            <Typography fontSize="20px" color="#000">
+              <div
+                style={{
+                  fontWeight: "bold",
+                  marginBottom: "35px",
+                  fontSize: "22px",
+                }}
+              >
+                Why should a BRAND associate with Stalwart:
+              </div>
+              <ul>
+                <li style={{ marginBottom: "20px" }}>
+                  Single point billing for the Brand that Stalwart runs which
+                  eases the accounting process.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Stalwart builds, manages and operates complete Sales &
+                  Distribution, Marketing and Revenue Solutions for you, while
+                  you focus on brand strengthening and product portfolio.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Stalwart runs complete market value chain in GT, MT, HoReCa
+                  and Quick Commerce and Marketplaces.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Reduced cost of selling and optimised efforts by Stalwart’s
+                  effective{" "}
+                  <span style={{ color: "#F1592A" }}> ‘Plug-N- Play’ </span>
+                  structure.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Faster, effective, hassle-free territory entry, market
+                  expansion and revenue generation.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Asset light and technology driven sales reporting and market
+                  accounting.
+                </li>
+                <li style={{ marginBottom: "20px" }}>
+                  Sustainability and scalability for the Brand.
+                </li>
+              </ul>
+            </Typography>
+          </Box>
+          {/* <br /> */}
+          {/* <Typography
             fontSize="20px"
             fontWeight="500"
             color="#323131"
@@ -69,12 +111,11 @@ const Manufacturer = () => {
                 effective ‘Plug-N- Play’ structure.
               </li>
             </ul>
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
- 
 
-      <Container fixed sx={{ margin: { md: "100px auto" } }}>
+      {/* <Container fixed sx={{ margin: { md: "100px auto" } }}>
         <Grid
           container
           spacing={0}
@@ -93,19 +134,19 @@ const Manufacturer = () => {
             <img
               src={require("../../assets/home/Manufacturer.png")}
               alt=""
-              style={{ width: "100%" , objectFit: "contain" }}
+              style={{ width: "100%", objectFit: "contain" }}
             />
             <br />
-            {/* <Box textAlign="center">
+             <Box textAlign="center">
               <img
                 src={require("../../assets/home/problemstatement.png")}
                 alt=""
                 style={{ width: "80%", height: "600px", objectFit: "contain" }}
               />
-            </Box> */}
-          </Container>
+            </Box> 
+          </Container> 
         </Grid>
-      </Container>
+      </Container>*/}
     </>
   );
 };

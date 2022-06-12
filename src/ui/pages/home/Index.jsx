@@ -98,8 +98,9 @@ const Home = () => {
                     className="whiteback"
                     sx={{
                       border: "0.5px solid #e6e6e6",
-                      padding: "15px 30px",
+                      padding: "15px 0px",
                       textAlign: "center",
+                      alignSelf: "center"
                     }}
                   >
                     <Typography

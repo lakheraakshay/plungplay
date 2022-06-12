@@ -25,7 +25,7 @@ const Footer = () => {
                                 Copyright 2019 The Stalwart Company. All Rights Reserved.
                             </Typography>
                             <Typography sx={{ fontSize: '16px', fontWeight: '500', color: '#fff' }}>
-                                Stalwart Business Consortium LLP (SBCL) - A Stalwart World Company- INDIA’s first and one of its kind <span style={{ color: '#F1592A' }}>'Plug-N-Play Sales</span> Implementation and <span style={{ color: '#F1592A' }}>Route To Market'</span> organization
+                                Stalwart Business Consortium LLP (SBCL) - A Stalwart World Company- INDIA’s first and one of its kind <span style={{ color: '#F1592A' }}>'Plug-N-Play</span> Sales Implementation and <span style={{ color: '#F1592A' }}>Route To Market'</span> organization
                             </Typography>
                         </Grid>
                         <Grid item xl="4" md="4" xs="12" >

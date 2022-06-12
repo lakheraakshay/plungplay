@@ -24,7 +24,7 @@ const Links = [
     url: "/about-us",
   },
   {
-    title: "Advantage",
+    title: "Stalwart Advantage",
     url: "/advantage",
   },
   {

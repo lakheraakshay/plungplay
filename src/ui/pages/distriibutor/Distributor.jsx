@@ -22,17 +22,17 @@ const Distributor = () => {
         wrap="wrap"
         sx={{ marginTop: "-8px" }}
       >
-        <Grid item xl="6" md="6" xs="12">
+        <Grid item xl="7" md="7" xs="12">
           <img
             src={require("../../assets/home/infographic.png")}
             alt=""
             style={{ width: "100%", height: "700px", marginBottom: "-7px" }}
           />
         </Grid>
-        <Grid item xl="6" md="6" xs="12" sx={{ background: "#EAEAEA" }}>
+        <Grid item xl="5" md="5" xs="12" sx={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#323131">
-              <div style={{ fontWeight: "bold", marginBottom: "20px" }}>
+            <Typography fontSize="20px" color="#000">
+            <div style={{ fontWeight: "bold", marginBottom: "35px", fontSize: '22px' }}>
                 Why should a Distributor associate with Stalwart:
               </div>
               <ul>
@@ -66,7 +66,7 @@ const Distributor = () => {
           </Box>
         </Grid>
       </Grid>
-      <Container fixed sx={{ margin: { md: "100px auto" } }}>
+      {/* <Container fixed sx={{ margin: { md: "100px auto" } }}>
         <Grid
           container
           spacing={0}
@@ -75,7 +75,7 @@ const Distributor = () => {
           alignItems="stretch"
           alignContent="stretch"
           wrap="wrap"
-        >
+        > */}
           {/* <Grid item xl="6" md="6" xs="12">
             <Typography fontSize="20px" fontWeight="600" color="initial">
               Why should a BRAND associate with Stalwart:
@@ -125,7 +125,7 @@ const Distributor = () => {
             xs="12"
             // sx={{ background: "#EAEAEA", position: "absolute", right: "0" }}
           > */}
-          <Container fixed sx={{ margin: "0px auto" }}>
+          {/* <Container fixed sx={{ margin: "0px auto" }}>
             <Typography fontSize="32px" fontWeight="700" color="#323131">
               Our Approach
             </Typography>
@@ -138,7 +138,7 @@ const Distributor = () => {
                 style={{ width: "80%" }}
               />
             </Box>
-          </Container>
+          </Container> */}
 
           {/* <Box sx={{ padding: '50px' }}>
                             <Typography fontSize="22px" fontWeight="500" color="#323131" marginLeft="30px">
@@ -168,8 +168,8 @@ const Distributor = () => {
                             </Typography>
                         </Box> */}
           {/* </Grid> */}
-        </Grid>
-      </Container>
+        {/* </Grid>
+      </Container> */}
 
       {/* <Container fixed sx={{ margin: { md: '150px auto' } }}>
                 <img src={require("../../assets/home/ditgraph.png")} alt="" style={{ width: '100%' }} />

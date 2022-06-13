@@ -41,7 +41,7 @@ const Manufacturer = () => {
         </Grid>
         <Grid item xl="5" md="5" xs="12" style={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#000">
+            <Typography fontSize="20px" color="#000" sx={{ padding: { md: '0', xs: '20px' } }}>
               <div
                 style={{
                   fontWeight: "bold",

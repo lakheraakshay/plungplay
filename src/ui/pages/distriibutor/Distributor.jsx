@@ -31,7 +31,7 @@ const Distributor = () => {
         </Grid>
         <Grid item xl="5" md="5" xs="12" sx={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#000">
+            <Typography fontSize="20px" color="#000" sx={{ padding: { md: '0', xs: '20px' } }}>
               <div style={{ fontWeight: "bold", marginBottom: "35px", fontSize: '22px' }}>
                 Why should a Distributor associate with Stalwart:
               </div>

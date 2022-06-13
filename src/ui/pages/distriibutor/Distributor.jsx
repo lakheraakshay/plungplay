@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Grid } from "@mui/material/";
+import { Box, Grid } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 
 const Distributor = () => {
@@ -32,7 +32,7 @@ const Distributor = () => {
         <Grid item xl="5" md="5" xs="12" sx={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
             <Typography fontSize="20px" color="#000">
-            <div style={{ fontWeight: "bold", marginBottom: "35px", fontSize: '22px' }}>
+              <div style={{ fontWeight: "bold", marginBottom: "35px", fontSize: '22px' }}>
                 Why should a Distributor associate with Stalwart:
               </div>
               <ul>
@@ -76,7 +76,7 @@ const Distributor = () => {
           alignContent="stretch"
           wrap="wrap"
         > */}
-          {/* <Grid item xl="6" md="6" xs="12">
+      {/* <Grid item xl="6" md="6" xs="12">
             <Typography fontSize="20px" fontWeight="600" color="initial">
               Why should a BRAND associate with Stalwart:
             </Typography>
@@ -118,14 +118,14 @@ const Distributor = () => {
               </ul>
             </Typography>
           </Grid> */}
-          {/* <Grid
+      {/* <Grid
             item
             xl="5"
             md="5"
             xs="12"
             // sx={{ background: "#EAEAEA", position: "absolute", right: "0" }}
           > */}
-          {/* <Container fixed sx={{ margin: "0px auto" }}>
+      {/* <Container fixed sx={{ margin: "0px auto" }}>
             <Typography fontSize="32px" fontWeight="700" color="#323131">
               Our Approach
             </Typography>
@@ -140,7 +140,7 @@ const Distributor = () => {
             </Box>
           </Container> */}
 
-          {/* <Box sx={{ padding: '50px' }}>
+      {/* <Box sx={{ padding: '50px' }}>
                             <Typography fontSize="22px" fontWeight="500" color="#323131" marginLeft="30px">
                                 Media Coverage & Achievements:
                             </Typography>
@@ -167,8 +167,8 @@ const Distributor = () => {
                                 </li>
                             </Typography>
                         </Box> */}
-          {/* </Grid> */}
-        {/* </Grid>
+      {/* </Grid> */}
+      {/* </Grid>
       </Container> */}
 
       {/* <Container fixed sx={{ margin: { md: '150px auto' } }}>

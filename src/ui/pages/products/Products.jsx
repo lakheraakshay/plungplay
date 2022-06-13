@@ -11,7 +11,8 @@ const Products = () => {
   const classes = useStyles();
 
   const [active, setActive] = React.useState();
-  const [beverages, setBeverages] = React.useState([
+  
+  const beverages = [
     "Coctail & Mocktail",
     "Juice",
     "Iced Green Tea",
@@ -19,8 +20,8 @@ const Products = () => {
     "Iced Tea",
     "Mojitos",
     "Insta Green Tea",
-  ]);
-  const [food, setFood] = React.useState([
+  ]
+  const food = [
     "Pasta",
     "Jams",
     "Sauces ",
@@ -28,21 +29,23 @@ const Products = () => {
     "Healthy Snacking",
     "Apple Ciders",
     "Cheese",
-  ]);
-  const [personalCare, setPersonalCare] = React.useState([
+  ]
+
+  const personalCare = [
     "Body Wash",
     "Shampoo",
     "Lotion",
     "Oil",
     "Serum",
-  ]);
-  const [mouthFreshner, setMouthFreshner] = React.useState([
+  ]
+
+  const mouthFreshner = [
     "After Smoke",
     "Emmunity",
     "Energy Fresh",
     "Insta Tea",
     "Iced Tea",
-  ]);
+  ]
 
   return (
     <>
@@ -66,7 +69,7 @@ const Products = () => {
             display: "flex",
             gap: "50px",
             flexWrap: "wrap",
-            justifyContent: { md: "space-between", xs: "center" },
+            justifyContent: "center",
           }}
         >
           <Box
@@ -167,7 +170,7 @@ const Products = () => {
                       fontWeight="500"
                       sx={{ border: "1px solid #000000", padding: "15px" }}
                     >
-                     {data}
+                      {data}
                     </Typography>
                   </>
                 ))}

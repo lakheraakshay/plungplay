@@ -13,11 +13,11 @@ const Contact = () => {
           alt=""
           style={{ width: "100%" }}
         />
-      </div><br/>
+      </div><br />
       <Container fixed sx={{ margin: { md: "100px auto" } }}>
         <Grid
           container
-          spacing={0}
+          spacing={5}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
@@ -25,33 +25,35 @@ const Contact = () => {
           wrap="wrap-reverse"
           sx={{ marginTop: "-8px" }}
         >
-          <Grid item xl="5" md="5" xs="12" sx={{padding:'20px'}}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
-              <img src={require("../../assets/home/contact (2).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                sales@stalwartworld.com
-              </Typography>
-            </Box>
-            <br />
-            <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
-              <img src={require("../../assets/home/contact (2).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                rajasi@stalwartworld.com
-              </Typography>
-            </Box>
-            <br />
-            <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
-              <img src={require("../../assets/home/contact (1).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                +91-97665 64158
-              </Typography>
-            </Box>
-            <br />
-            <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
-              <img src={require("../../assets/home/contact (1).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                +91-89833 81662
-              </Typography>
+          <Grid item xl="5" md="5" xs="12" >
+            <Box sx={{ padding: {md:'20px',xs:'20px 0'} }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <img src={require("../../assets/home/contact (2).png")} alt="" />
+                <Typography gutterBottom fontSize="20px" color="initial" sx={{ overflowY: "scroll" }}>
+                  sales@stalwartworld.com
+                </Typography>
+              </Box>
+              <br />
+              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <img src={require("../../assets/home/contact (2).png")} alt="" />
+                <Typography gutterBottom fontSize="20px" color="initial" sx={{ overflowY: "scroll" }}>
+                  rajasi@stalwartworld.com
+                </Typography>
+              </Box>
+              <br />
+              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <img src={require("../../assets/home/contact (1).png")} alt="" />
+                <Typography gutterBottom fontSize="20px" color="initial" sx={{ overflowY: "scroll" }}>
+                  +91-97665 64158
+                </Typography>
+              </Box>
+              <br />
+              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <img src={require("../../assets/home/contact (1).png")} alt="" />
+                <Typography gutterBottom fontSize="20px" color="initial" sx={{ overflowY: "scroll" }}>
+                  +91-89833 81662
+                </Typography>
+              </Box>
             </Box>
           </Grid>
           <Grid item xl="7" md="7" xs="12">

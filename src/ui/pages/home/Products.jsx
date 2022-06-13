@@ -46,7 +46,7 @@ const Products = () => {
     };
     return (
         <>
-            <Box sx={{ background: '#D9D9D9 ',padding:'10px' }}>
+            <Box sx={{ background: '#D9D9D9 ', padding: '10px' }}>
                 <Container fixed sx={{ margin: '100px auto' }}>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                         <div>
@@ -63,16 +63,24 @@ const Products = () => {
                     <br />
                     <Slider {...settings}>
                         <Box>
-                            <img src={require(`../../assets/home/homeprod (1).png`)} alt="" className={classes.productsImg} />
+                            <img src={require(`../../assets/home/homeprod (1).png`)} alt=""
+                                style={{ display: 'block', margin: '0 auto' }}
+                                className={classes.productsImg} />
                         </Box>
                         <Box>
-                            <img src={require(`../../assets/home/homeprod (2).png`)} alt="" className={classes.productsImg} />
+                            <img src={require(`../../assets/home/homeprod (2).png`)} alt=""
+                                style={{ display: 'block', margin: '0 auto' }}
+                                className={classes.productsImg} />
                         </Box>
                         <Box>
-                            <img src={require(`../../assets/home/homeprod (5).png`)} alt="" className={classes.productsImg} />
+                            <img src={require(`../../assets/home/homeprod (5).png`)} alt=""
+                                style={{ display: 'block', margin: '0 auto' }}
+                                className={classes.productsImg} />
                         </Box>
                         <Box>
-                            <img src={require(`../../assets/home/homeprod (4).png`)} alt="" className={classes.productsImg} />
+                            <img src={require(`../../assets/home/homeprod (4).png`)} alt=""
+                                style={{ display: 'block', margin: '0 auto' }}
+                                className={classes.productsImg} />
                         </Box>
                     </Slider>
                 </Container>

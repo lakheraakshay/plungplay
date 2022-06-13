@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Box } from "@mui/material/";
 import Slider from "react-slick";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import CountUp from "react-countup";
 
 const ProductSlider = () => {
   const settings = {
@@ -50,12 +47,12 @@ const ProductSlider = () => {
           <Slider {...settings}>
             {new Array(5).fill("").map((item, i) => (
               <>
-                <Box>
+                <Box  >
                   <img
-                    src={require(`../../assets/home/homeprodslider (${
-                      i + 1
-                    }).png`)}
+                    src={require(`../../assets/home/homeprodslider (${i + 1
+                      }).png`)}
                     alt=""
+                    style={{ display: 'block', margin: '0 auto' }}
                   />
                 </Box>
               </>

@@ -60,22 +60,34 @@ const Clients = () => {
         <br />
         <Slider {...settings}>
           <Box >
-            <img src={require("../../assets/home/brands (1).png")} alt="" width={'200px'}  />
+            <img src={require("../../assets/home/brands (1).png")} alt="" width={'200px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
-            <img src={require("../../assets/home/brands (2).png")} alt="" width={'200px'} />
+            <img src={require("../../assets/home/brands (2).png")} alt="" width={'200px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
-            <img src={require("../../assets/home/brands (3).png")} alt="" width={'200px'} />
+            <img src={require("../../assets/home/brands (3).png")} alt="" width={'200px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
-            <img src={require("../../assets/home/cravova.jpg")} alt="" width={'200px'} height={'150px'} />
+            <img src={require("../../assets/home/cravova.jpg")} alt="" width={'200px'} height={'150px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
-            <img src={require("../../assets/home/naturup.webp")} alt="" width={'200px'} />
+            <img src={require("../../assets/home/naturup.webp")} alt="" width={'200px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
-            <img src={require("../../assets/home/brand6.jpeg")} alt="" width={'200px'} />
+            <img src={require("../../assets/home/brand6.jpeg")} alt="" width={'200px'}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
           <Box >
             <img src={require("../../assets/home/alphavedic.webp")} alt="" width={'200px'} />

@@ -8,7 +8,6 @@ import {
   useMediaQuery,
   Drawer,
   IconButton,
-  Container,
 } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import MenuOpenRoundedIcon from "@mui/icons-material/MenuOpenRounded";
@@ -81,7 +80,7 @@ const Header = () => {
                   to={item.url}
                   className={classes.heading}
                   style={({ isActive }) => ({
-                    color: "#000",
+                    color: isActive ? "#fff" : "#000",
                     fontWeight: isActive ? "800" : "500",
                     marginLeft: "20px",
                     border: isActive && "1px solid #F1592A",

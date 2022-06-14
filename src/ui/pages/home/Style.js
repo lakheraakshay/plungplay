@@ -18,5 +18,11 @@ export const useStyles = makeStyles((theme) => ({
         "&:hover": {
             boxShadow: '0px 49px 50px -33px rgba(0, 0, 0, 0.25)'
         },
+    },
+    aboutimg: {
+        height: "100vh", width: "100%", marginBottom: "-5px",
+        [theme.breakpoints.down(500)]: {
+            height: "50vh"
+        }
     }
 }));

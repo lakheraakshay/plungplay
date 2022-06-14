@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid } from "@mui/material/";
+import { Box,  Grid } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 
 const Advantage = () => {
@@ -22,16 +22,16 @@ const Advantage = () => {
         wrap="wrap"
         sx={{ marginTop: "-8px" }}
       >
-        <Grid item xl="8" md="8" xs="12">
+        <Grid item xl="8" md="8" xs="12" sx={{paddingTop:{md:'20px',xs:'0'}}}>
           <img
             src={require("../../assets/home/advantageflow1.png")}
             alt=""
-            style={{ width: "100%",}}
+            style={{ width: "100%", }}
           />
         </Grid>
         <Grid item xl="4" md="4" xs="12" style={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#000">
+            <Typography fontSize="20px" color="#000" sx={{padding: { md: "auto",xs:"20px"}}}>
               <div
                 style={{
                   fontWeight: "bold",
@@ -72,7 +72,7 @@ const Advantage = () => {
       >
         <Grid item xl="4" md="4" xs="12" style={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#000">
+            <Typography fontSize="20px" color="#000"  sx={{padding: { md: "auto",xs:"20px"}}}>
               <div
                 style={{
                   fontWeight: "bold",

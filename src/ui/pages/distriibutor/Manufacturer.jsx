@@ -1,8 +1,18 @@
 import React from "react";
-import { Box, Container, Grid } from "@mui/material/";
+import { Box, Grid } from "@mui/material/";
 import Typography from "@mui/material/Typography";
+import { makeStyles } from "@mui/styles";
 
+const useStyles = makeStyles((theme) => ({
+  image: {
+    width: "100%", height: "720px",
+    [theme.breakpoints.down(800)]: {
+      height: 'auto',
+    },
+  },
+}));
 const Manufacturer = () => {
+  const classes = useStyles()
   return (
     <>
       <div>
@@ -26,12 +36,12 @@ const Manufacturer = () => {
           <img
             src={require("../../assets/home/Manufacturer.png")}
             alt=""
-            style={{ width: "100%", height: 720 }}
+            className={classes.image}
           />
         </Grid>
         <Grid item xl="5" md="5" xs="12" style={{ background: "#f6f6f6" }}>
           <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#000">
+            <Typography fontSize="20px" color="#000" sx={{ padding: { md: '0', xs: '20px' } }}>
               <div
                 style={{
                   fontWeight: "bold",

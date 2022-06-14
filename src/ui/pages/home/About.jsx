@@ -2,9 +2,11 @@ import React from "react";
 import { Box } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import { useStyles } from './Style';
 
 const About = () => {
-  return (
+const classes = useStyles();
+return (
     <>
       <Box
         sx={{
@@ -26,7 +28,7 @@ const About = () => {
             <img
               src={require("../../assets/home/about.png")}
               alt=""
-              style={{ height: "100vh", width: "100%", marginBottom: "-5px" }}
+              className={classes.aboutimg} 
             />
           </Grid>
           <Grid item xl="6" md="6" xs="12">

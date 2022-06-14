@@ -30,10 +30,10 @@ const Home = () => {
             md="6"
             xs="12"
             sx={{
-              paddingLeft: { md: "50px", xs: "10px" },
-              paddingRight: { md: "50px", xs: "10px" },
-              paddingTop: { md: "50px", xs: "10px" },
-              paddingBottom: { md: "0", xs: "10px" },
+              paddingLeft: { md: "50px", xs: "20px" },
+              paddingRight: { md: "50px", xs: "20px" },
+              paddingTop: { md: "50px", xs: "20px" },
+              paddingBottom: { md: "0", xs: "20px" },
             }}
           >
             <Grid
@@ -46,7 +46,7 @@ const Home = () => {
               wrap="wrap"
             >
               <Grid item xl="4" md="4" xs="12">
-                <div>
+                <Box sx={{ textAlign: { md: 'left', xs: "center" } }}>
                   <img
                     src={require("../../assets/home/greatbrand.png")}
                     alt=""
@@ -55,10 +55,8 @@ const Home = () => {
                   <Typography fontSize="18px" fontWeight="600">
                     World’s Greatest Brand
                   </Typography>
-                </div>
+                </Box>
               </Grid>
-              {/* <br />
-              <br /> */}
               <Grid
                 item
                 xl="8"
@@ -67,7 +65,7 @@ const Home = () => {
                 sx={{
                   paddingLeft: { md: "40px", xs: '0px' },
                   paddingTop: { md: "40px", xs: '0px' },
-                  paddingBottom: {md:"80px",xs:'20px'},
+                  paddingBottom: { md: "80px", xs: '20px' },
                 }}
               >
                 <div>
@@ -255,10 +253,10 @@ const Home = () => {
             xs="12"
             sx={{
               textAlign: "center",
-              paddingTop: "50px",
-              paddingLeft: "50px",
-              paddingRight: "50px",
-              paddingBottom: "0px",
+              paddingTop: {md:"50px",xs:'-22px'},
+              paddingLeft: {md:"50px",xs:'auto'},
+              paddingRight: {md:"50px",xs:'auto'},
+              paddingBottom:{md: "0px",xs:'-22px'},
               background: "linear-gradient(180deg, #fff, #fff, #4a4a4a)",
             }}
           >

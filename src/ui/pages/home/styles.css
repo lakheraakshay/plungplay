@@ -23,3 +23,17 @@ body {
   display: block;
   width: 100%;
 }
+.img-plate {
+  -webkit-animation: anim 10s infinite linear;
+  animation: anim 10s infinite linear;
+}
+
+@-webkit-keyframes anim {
+  from {-webkit-transform: rotateY(0deg);}
+  to {-webkit-transform: rotateY(360deg);}
+}
+
+@keyframes anim {
+  from {transform: rotateY(0deg);}
+  to {transform: rotateY(360deg);}
+}

@@ -8,8 +8,8 @@ import aditya from "../../assets/home/aditya1.jpg";
 const Team = () => {
   return (
     <>
-      <Box sx={{ background: "#F7F7F7", padding: "30px" }}>
-        <Container fixed sx={{ margin: { md: "100px auto" } }}>
+      <Box sx={{ background: "#F7F7F7", padding: "30px", margin: '40px 0px auto auto' }}>
+        <Container fixed sx={{ margin: { md: "0px auto" } }}>
           <Typography fontSize="32px" fontWeight="700" color="initial">
             Our Team
           </Typography>

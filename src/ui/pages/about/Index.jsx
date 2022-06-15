@@ -43,7 +43,6 @@ const About = () => {
               <br />
               <Typography fontSize="20px" fontWeight="500" color="#323131">
                 {/* <b> AT STALWART, WE ARE BUILDING:</b> */}
-                <br />
                 India’s fastest growing
                 <span className="redcol"> 'Route to Market' </span>
                 company' that makes market entry and presence quick, easy,
@@ -66,7 +65,7 @@ const About = () => {
         </Container>
       </Box>
 
-      <Container fixed sx={{ margin: "100px auto" }}>
+      <Container fixed sx={{ margin: "40px auto" }}>
         <Grid
           container
           spacing={4}
@@ -151,17 +150,17 @@ const About = () => {
         alignItems="stretch"
         alignContent="stretch"
         wrap="wrap"
-        sx={{ marginTop: "-8px" }}
+        // sx={{ marginTop: "-8px" }}
       >
         <Grid item xl="6" md="6" xs="12">
           <img
-            src={require("../../assets/home/supplychain2.png")}
+            src={require("../../assets/home/businessgrowth.webp")}
             alt=""
-            style={{ width: '100%',  marginBottom: "-7px" }}
+            style={{ width: '100%' }}
           />
         </Grid>
-        <Grid item xl="6" md="6" xs="12" sx={{ background: "#EAEAEA" }}>
-          <Box sx={{ padding: { md: "50px", xs: "20px" } }}>
+        <Grid item xl="6" md="6" xs="12" sx={{ background: "#F6F6F6" }}>
+          <Box sx={{ padding: { md: "25px 25px 40px 40px", xs: "20px" } }}>
             <Typography fontSize="20px" color="#323131" padding="20px">
               <div style={{ fontWeight: "bold", marginBottom: "40px", fontSize: 32 }}>
                 At Stalwart, we are building:

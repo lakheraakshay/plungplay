@@ -19,7 +19,7 @@ const Manufacturer = () => {
         <img
           src={require("../../assets/home/mainbrands.png")}
           alt=""
-          style={{ width: "100%", height: "150px" }}
+          style={{ width: "100%" }}
         />
       </div>
       <Grid

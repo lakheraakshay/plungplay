@@ -155,6 +155,7 @@ const Beaverage = () => {
                 <img
                   src={require(`../../assets/home/mojito ${i + 1}.jpeg`)}
                   alt=""
+                  height="260px"
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />

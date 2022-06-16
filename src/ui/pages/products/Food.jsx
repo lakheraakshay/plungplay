@@ -7,7 +7,20 @@ import { useStyles } from "./Style";
 const Food = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [pasta, setPasta] = React.useState(["25", "25", "25"]);
+  const [pasta, setPasta] = React.useState([
+    "25",
+    "25",
+    "25",
+    "149",
+    "149",
+    "169",
+    "149",
+    "159",
+    "69",
+    "149",
+    "149",
+    "159",
+  ]);
   const [sauces, setSauces] = React.useState(["89", "89", "1", "139"]);
   const [evolve, setEvolve] = React.useState([
     "80",
@@ -96,6 +109,7 @@ const Food = () => {
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
                   alt=""
+                  height="330px"
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
@@ -171,8 +185,9 @@ const Food = () => {
             <>
               <Box sx={{ width: "260px" }}>
                 <img
-                  src={require(`../../assets/home/sauces ${i + 1}.png`)}
+                  src={require(`../../assets/home/sauce${i + 1}.jpg`)}
                   alt=""
+                  height="380px"
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />

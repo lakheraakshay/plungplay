@@ -64,7 +64,8 @@ const Clients = () => {
             <img
               src={require("../../assets/home/brands (1).png")}
               alt=""
-              width={"200px"}
+              height="180px"
+              width={"180px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
@@ -73,7 +74,7 @@ const Clients = () => {
               src={require("../../assets/home/brands (2).png")}
               alt=""
               width={"200px"}
-              style={{ display: 'block', margin: '0 auto' }}
+              style={{ display: 'block', margin: '30px auto' }}
             />
           </Box>
           <Box>
@@ -81,7 +82,7 @@ const Clients = () => {
               src={require("../../assets/home/brands (3).png")}
               alt=""
               width={"200px"}
-              style={{ display: 'block', margin: '0 auto' }}
+              style={{ display: 'block', margin: '30px auto' }}
             />
           </Box>
           <Box>
@@ -89,7 +90,8 @@ const Clients = () => {
               src={require("../../assets/home/cravova.jpg")}
               alt=""
               width={"200px"}
-              style={{ display: 'block', margin: '0 auto' }}
+              height="100px"
+              style={{ display: 'block', margin: '40px auto' }}
             />
           </Box>
           <Box>
@@ -105,8 +107,8 @@ const Clients = () => {
               src={require("../../assets/home/brand6.jpg")}
               alt=""
               width={"200px"}
-              height="100px"
-              style={{ display: 'block', margin: '0 auto' }}
+              height="110px"
+              style={{ display: 'block', margin: '20px auto' }}
             />
           </Box>
           <Box>
@@ -130,7 +132,7 @@ const Clients = () => {
               src={require("../../assets/home/brand9.jpeg")}
               alt=""
               width={"200px"} 
-              style={{ display: 'block', margin: '0 auto' }}
+              style={{ display: 'block', margin: '50px auto' }}
             />
           </Box>
         </Slider>

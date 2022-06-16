@@ -7,7 +7,7 @@ import { useStyles } from "./Style";
 const MouthFresh = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [mouthFreshner, setmouthFreshner] = React.useState(["89", "89", "89", "89", "89", "89", "89", "89", "89", "89"]);
+  const [mouthFreshner, setmouthFreshner] = React.useState(["49", "49", "49", "49", "49", "49", "200", "300"]);
  
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

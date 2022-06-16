@@ -1,13 +1,18 @@
 import React, { useState } from "react";
-import { Container, Box, Grid } from "@mui/material/";
+import { Container, Box, Grid, Alert } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
+import Stack from "@mui/material/Stack";
+import CircularProgress from "@mui/material/CircularProgress";
+import Snackbar from "@mui/material/Snackbar";
 
 const initialForm = { name: "", email: "", contact: "", message: "" };
 const Contact = () => {
   const [formData, setFormData] = useState(initialForm);
+  const [openToast, setOpenToast] = useState({ open: false, msg: "" });
+  const [loader, setLoader] = useState(false);
 
   const sendMail = () => {};
   const handleChange = (e) => {
@@ -19,22 +24,50 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(e.target);
+
+    const { name, message, contact, email } = formData;
+    if (
+      name.trim() == "" ||
+      message.trim() == "" ||
+      email.trim() == "" ||
+      contact.trim() == ""
+    ) {
+      setOpenToast({
+        open: true,
+        msg: "All fields are required",
+        severity: "error",
+      });
+      return null;
+    }
+
+    setLoader(true);
     try {
       // ---- Login to EmailJs, create Service ID and template id.
 
       emailjs
         .sendForm(
           "service_f00ztqu", // service id
-          "template_s3pyodh", //--- template id
+          "template_s3pyodh", //--- tamplate id
           e.target, // form
           "user_zNFjvuObs4IGmjnw38Wrf" // user id
         )
         .then(
           (result) => {
-            console.log(result.text);
+            console.log(result);
+            setLoader(false);
+            setOpenToast({
+              open: true,
+              msg: "We will contact you soon.",
+              severity: "success",
+            });
           },
           (error) => {
             console.log(error.text);
+            setOpenToast({
+              open: true,
+              msg: "Error while sending mail",
+              severity: "error",
+            });
           }
         );
     } catch (e) {
@@ -45,6 +78,25 @@ const Contact = () => {
   return (
     <>
       <div>
+        <Snackbar
+          open={openToast.open}
+          autoHideDuration={3000}
+          onClose={() => setOpenToast({ open: false })}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "center",
+          }}
+          // action={action}
+          severity={openToast.severity}
+        >
+          <Alert
+            onClose={() => setOpenToast({ open: false })}
+            severity={openToast.severity}
+            sx={{ width: "100%" }}
+          >
+            {openToast.msg}
+          </Alert>
+        </Snackbar>
         <img
           src={require("../../assets/home/contactusheader.png")}
           alt=""
@@ -103,26 +155,26 @@ const Contact = () => {
                 Get In Touch
               </Typography>
               <br />
-              <div>
-                <Typography gutterBottom fontSize="20px" color="initial">
-                  Name
-                </Typography>
-                <TextField
-                  id=""
-                  placeholder="Enter your name"
-                  name="name"
-                  onChange={(e) => handleChange(e)}
-                  label=""
-                  variant="outlined"
-                  sx={{
-                    width: "100%",
-                    background: "#fff",
-                    borderRadius: "6px",
-                  }}
-                />
-              </div>
-              <br />
               <form onSubmit={onSubmit}>
+                <div>
+                  <Typography gutterBottom fontSize="20px" color="initial">
+                    Name
+                  </Typography>
+                  <TextField
+                    id=""
+                    placeholder="Enter your name"
+                    name="name"
+                    onChange={(e) => handleChange(e)}
+                    label=""
+                    variant="outlined"
+                    sx={{
+                      width: "100%",
+                      background: "#fff",
+                      borderRadius: "6px",
+                    }}
+                  />
+                </div>
+                <br />
                 <div>
                   <Typography gutterBottom fontSize="20px" color="initial">
                     Email
@@ -183,18 +235,31 @@ const Contact = () => {
                 </div>
                 <br /> <br />
                 <Box sx={{ textAlign: "center" }}>
-                  <Button
-                    size="large"
-                    // onClick={onSubmit}
-                    type="submit"
-                    variant="contained"
-                    sx={{
-                      background: "#13104B",
-                      "&:hover": { background: "#13104B" },
-                    }}
-                  >
-                    Submit
-                  </Button>
+                  {!loader && (
+                    <Button
+                      size="large"
+                      // onClick={onSubmit}
+                      type="submit"
+                      variant="contained"
+                      sx={{
+                        background: "#13104B",
+                        "&:hover": { background: "#13104B" },
+                      }}
+                    >
+                      Submit
+                    </Button>
+                  )}
+                  {loader && (
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <Stack
+                        sx={{ color: "grey.500" }}
+                        spacing={2}
+                        direction="row"
+                      >
+                        <CircularProgress color="secondary" />
+                      </Stack>
+                    </div>
+                  )}
                 </Box>
               </form>
             </Box>

@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import { useStyles } from "./Style";
 
 const Beaverage = () => {
+  const [active, setActive] = React.useState();
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [cockmock, setCockmock] = React.useState([
@@ -60,6 +61,7 @@ const Beaverage = () => {
         <Divider />
         <br />
         <br />
+
         <Typography fontSize="24px" fontWeight="500" color="initial">
           Cocktail & Mocktail
         </Typography>
@@ -363,6 +365,47 @@ const Beaverage = () => {
             </>
           ))}
         </Box>
+        <br/>
+        <br/>
+        <Box
+          onMouseOver={() => setActive(1)}
+          onMouseOut={() => setActive(null)}
+          sx={{ width: { md: "260px", xs: "100%" } }}
+        >
+          <img
+            src={require("../../assets/home/probiotic1.png")}
+            alt=""
+            className={classes.productsImgCat}
+          />
+          <Box
+            display={active == "1" ? "block" : "none"}
+            className={classes.hoeverContainer}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "20px",
+                justifyContent: { md: "space-between", xs: "center" },
+              }}
+            >
+              <Typography
+                fontSize="15px"
+                fontWeight="500"
+                sx={{ border: "1px solid #000000", padding: "15px" }}
+              >
+                10 ml
+              </Typography>
+              <Typography
+                fontSize="15px"
+                fontWeight="500"
+                sx={{ border: "1px solid #000000", padding: "15px" }}
+              >
+                20 ml
+              </Typography>
+            </Box>
+          </Box>
+        </Box>
       </Container>
       <Modal
         open={open}
@@ -441,6 +484,8 @@ const Beaverage = () => {
           </Box>
         </Box>
       </Modal>
+
+
     </>
   );
 };

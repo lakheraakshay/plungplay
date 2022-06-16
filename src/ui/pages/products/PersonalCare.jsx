@@ -8,27 +8,9 @@ const PersonalCare = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
-  const [mojito, setMojito] = React.useState(["30", "30", "30", "30"]);
-  const [juice, setJuice] = React.useState(["450", "10"]);
-  const [icedTea, setIcedTea] = React.useState([
-    "160",
-    "99",
-    "99",
-    "160",
-    "160",
-    "99",
-    "99",
-    "99",
-    "99",
-    "160",
-    "160",
-    "160",
-    "160",
-    "99",
-    "99",
-    "99",
-    "160",
-  ]);
+  const [lipScrub, setLipScrub] = React.useState(["30", "30", "30", "30"]);
+  const [bodyWash, setbodyWash] = React.useState(["450", "10", "10"]);
+  const [coconutOil, setcoconutOil] = React.useState(["160", "99"]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -111,7 +93,7 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {mojito.map((item, i) => (
+          {lipScrub.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
@@ -137,7 +119,7 @@ const PersonalCare = () => {
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
-          Juice
+          Body Wash
         </Typography>
         <br />
         <Divider /> <br />
@@ -149,11 +131,11 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {juice.map((item, i) => (
+          {bodyWash.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
-                  src={require(`../../assets/home/juice (${i + 1}).jpg`)}
+                  src={require(`../../assets/home/bodywash ${i + 1}.png`)}
                   alt=""
                   className={classes.productsImg}
                   onClick={handleOpen}
@@ -175,7 +157,45 @@ const PersonalCare = () => {
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
-          Insta Green Tea
+          Coconut Oil
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {coconutOil.map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/coconutoil ${i + 1}.png`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: {item}/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Rose Water
         </Typography>
         <br />
         <Divider /> <br />
@@ -191,7 +211,7 @@ const PersonalCare = () => {
             <> */}
           <Box sx={{ width: "260px" }}>
             <img
-              src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
+              src={require("../../assets/home/rosewater.png")}
               alt=""
               className={classes.productsImg}
               onClick={handleOpen}
@@ -207,13 +227,11 @@ const PersonalCare = () => {
               MRP: 500/-
             </Typography>
           </Box>
-          {/* </>
-          ))} */}
         </Box>
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
-          Iced Tea
+          Scrub Cream
         </Typography>
         <br />
         <Divider /> <br />
@@ -225,28 +243,62 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {icedTea.map((item, i) => (
-            <>
-              <Box sx={{ width: "260px" }}>
-                <img
-                  src={require(`../../assets/home/icedteacan (${i + 1}).jpg`)}
-                  alt=""
-                  className={classes.productsImg}
-                  onClick={handleOpen}
-                />
-                <br />
-                <Typography
-                  mt="10px"
-                  textAlign="center"
-                  fontSize="20px"
-                  fontWeight="500"
-                  color="initial"
-                >
-                  MRP: {item}/-
-                </Typography>
-              </Box>
-            </>
-          ))}
+          {/* {new Array(8).fill().map(() => (
+            <> */}
+          <Box sx={{ width: "260px" }}>
+            <img
+              src={require("../../assets/home/scrubcream.png")}
+              alt=""
+              className={classes.productsImg}
+              onClick={handleOpen}
+            />
+            <br />
+            <Typography
+              mt="10px"
+              textAlign="center"
+              fontSize="20px"
+              fontWeight="500"
+              color="initial"
+            >
+              MRP: 500/-
+            </Typography>
+          </Box>
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Sunscreen
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "space-between", sm: "center" },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* {new Array(8).fill().map(() => (
+            <> */}
+          <Box sx={{ width: "260px" }}>
+            <img
+              src={require("../../assets/home/sunscream.png")}
+              alt=""
+              className={classes.productsImg}
+              onClick={handleOpen}
+            />
+            <br />
+            <Typography
+              mt="10px"
+              textAlign="center"
+              fontSize="20px"
+              fontWeight="500"
+              color="initial"
+            >
+              MRP: 500/-
+            </Typography>
+          </Box>
         </Box>
       </Container>
       <Modal

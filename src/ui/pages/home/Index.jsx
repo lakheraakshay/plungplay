@@ -520,8 +520,8 @@ const Home = () => {
             sx={{
               textAlign: "center",
               // paddingTop: "50px",
-              paddingLeft: "50px",
-              paddingRight: "50px",
+              paddingLeft: "20px",
+              paddingRight: "28px",
               paddingBottom: "50px",
               background: "linear-gradient(180deg, #fff, #fff, #4a4a4a)",
             }}
@@ -585,18 +585,20 @@ const Home = () => {
             <div>
               <Typography
                 sx={{
-                  fontSize: { md: "15px", xs: "13px" },
+                  fontSize: { md: "18px", xs: "16px" },
                   color: "#070707",
-                  // background: "rgba(255,255,255,0.5)",
+                  // background: "rgba(255,255,255,0.2)",
                 }}
                 fontWeight="700"
               >
-                It is indeed a proud moment for everyone at STALWART to witness
-                Divyashikha Gupta – CEO & Managing Director – Group – getting
-                recognized as one of the World’s Greatest Leaders 2021-22 &
-                World’s Greatest Brands 2021-22 at the annual summit of AsiaOne.
-                {/* to be held digitally on Fri 25th Mar 2022 and in person on 22nd
-                April in London. */}
+                'Divyashikha Gupta' – 'CEO & Managing Director' – 'Stalwart
+                World Group' – Awarded as the 
+                <span className="redcol">
+                   {` ' World’s Greatest Leaders 2021-22 ' `}
+                </span>
+                & 'Stalwart World' - Awarded as
+                <span className="redcol">{` ' World's Greatest Brand 2021-22 ' `}</span>
+                at the annual summit of AsiaOne.
               </Typography>
             </div>
           </Grid>

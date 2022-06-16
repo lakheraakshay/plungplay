@@ -4,10 +4,31 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useStyles } from "./Style";
 
-
 const Beaverage = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
+  const [mojito, setMojito] = React.useState(["30", "30", "30", "30"]);
+  const [juice, setJuice] = React.useState(["450", "10"]);
+  const [icedTea, setIcedTea] = React.useState([
+    "160",
+    "99",
+    "99",
+    "160",
+    "160",
+    "99",
+    "99",
+    "99",
+    "99",
+    "160",
+    "160",
+    "160",
+    "160",
+    "99",
+    "99",
+    "99",
+    "160",
+  ]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -23,7 +44,7 @@ const Beaverage = () => {
     border: "1px solid #070707",
     boxShadow: 14,
     p: 4,
-    borderRadius: 4
+    borderRadius: 4,
   };
 
   return (
@@ -37,7 +58,7 @@ const Beaverage = () => {
       </div>
       <Container fixed sx={{ margin: { md: "50px auto" } }}>
         <Typography fontSize="32px" fontWeight="700" color="initial">
-          Categories- Beverages
+          Categories - Beverages
         </Typography>
         <br />
         <Divider />
@@ -47,16 +68,16 @@ const Beaverage = () => {
           Cold Coffee
         </Typography>
         <br />
-        <Divider />        <br />
+        <Divider /> <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: 'space-between', sm: 'center' },
+            justifyContent: { md: "space-between", sm: "center" },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
-          {new Array(4).fill().map((item, i) => (
+          {coffee.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
@@ -73,7 +94,7 @@ const Beaverage = () => {
                   fontWeight="500"
                   color="initial"
                 >
-                  MRP: 120/-
+                  MRP: {item}/-
                 </Typography>
               </Box>
             </>
@@ -85,16 +106,16 @@ const Beaverage = () => {
           Mojitos
         </Typography>
         <br />
-        <Divider />        <br />
+        <Divider /> <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: 'space-between', sm: 'center' },
+            justifyContent: { md: "space-between", sm: "center" },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
-          {new Array(4).fill().map((item, i) => (
+          {mojito.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
@@ -111,7 +132,7 @@ const Beaverage = () => {
                   fontWeight="500"
                   color="initial"
                 >
-                  MRP: 120/-
+                  MRP: {item}/-
                 </Typography>
               </Box>
             </>
@@ -123,16 +144,16 @@ const Beaverage = () => {
           Juice
         </Typography>
         <br />
-        <Divider />        <br />
+        <Divider /> <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: 'start', sm: 'center' },
+            justifyContent: { md: "start", sm: "center" },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
-          {new Array(2).fill().map((item, i) => (
+          {juice.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
@@ -149,7 +170,7 @@ const Beaverage = () => {
                   fontWeight="500"
                   color="initial"
                 >
-                  MRP: 120/-
+                  MRP: {item}/-
                 </Typography>
               </Box>
             </>
@@ -161,36 +182,36 @@ const Beaverage = () => {
           Insta Green Tea
         </Typography>
         <br />
-        <Divider />        <br />
+        <Divider /> <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: 'space-between', sm: 'center' },
+            justifyContent: { md: "space-between", sm: "center" },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
           {/* {new Array(8).fill().map(() => (
             <> */}
-              <Box sx={{ width: "260px" }}>
-                <img
-                  src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
-                  alt=""
-                  className={classes.productsImg}
-                  onClick={handleOpen}
-                />
-                <br />
-                <Typography
-                  mt="10px"
-                  textAlign="center"
-                  fontSize="20px"
-                  fontWeight="500"
-                  color="initial"
-                >
-                  MRP: 120/-
-                </Typography>
-              </Box>
-            {/* </>
+          <Box sx={{ width: "260px" }}>
+            <img
+              src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
+              alt=""
+              className={classes.productsImg}
+              onClick={handleOpen}
+            />
+            <br />
+            <Typography
+              mt="10px"
+              textAlign="center"
+              fontSize="20px"
+              fontWeight="500"
+              color="initial"
+            >
+              MRP: 500/-
+            </Typography>
+          </Box>
+          {/* </>
           ))} */}
         </Box>
         <br />
@@ -199,16 +220,16 @@ const Beaverage = () => {
           Iced Tea
         </Typography>
         <br />
-        <Divider />        <br />
+        <Divider /> <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: 'space-between', sm: 'center' },
+            justifyContent: { md: "space-between", sm: "center" },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
-          {new Array(17).fill().map((item,i) => (
+          {icedTea.map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
@@ -225,7 +246,7 @@ const Beaverage = () => {
                   fontWeight="500"
                   color="initial"
                 >
-                  MRP: 120/-
+                  MRP: {item}/-
                 </Typography>
               </Box>
             </>

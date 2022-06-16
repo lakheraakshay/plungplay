@@ -80,7 +80,7 @@ const Products = () => {
             <img
               src={require("../../assets/home/prodprod (1).png")}
               alt=""
-              className={classes.productsImg}
+              className={classes.productsImgCat}
             />
             <Box
               display={active == "1" ? "block" : "none"}
@@ -133,7 +133,7 @@ const Products = () => {
             <img
               src={require("../../assets/home/prodprod (4).png")}
               alt=""
-              className={classes.productsImg}
+              className={classes.productsImgCat}
             />
             <Box
               display={active == "2" ? "block" : "none"}
@@ -186,7 +186,7 @@ const Products = () => {
             <img
               src={require("../../assets/home/prodprod (3).png")}
               alt=""
-              className={classes.productsImg}
+              className={classes.productsImgCat}
             />
             <Box
               display={active == "3" ? "block" : "none"}
@@ -239,7 +239,7 @@ const Products = () => {
             <img
               src={require("../../assets/home/prodprod (2).png")}
               alt=""
-              className={classes.productsImg}
+              className={classes.productsImgCat}
             />
             <Box
               display={active == "4" ? "block" : "none"}

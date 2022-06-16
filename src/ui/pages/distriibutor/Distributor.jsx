@@ -26,7 +26,7 @@ const Distributor = () => {
           <img
             src={require("../../assets/home/infographic.png")}
             alt=""
-            style={{ width: "100%", height: "700px", marginBottom: "-7px" }}
+            style={{ width: "100%", marginBottom: "-7px" }}
           />
         </Grid>
         <Grid item xl="5" md="5" xs="12" sx={{ background: "#f6f6f6" }}>

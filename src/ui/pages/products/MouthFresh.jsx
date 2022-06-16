@@ -52,8 +52,8 @@ const MouthFresh = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "start", sm: "center" },
-            gap: "60px",
+            justifyContent: { md: "space-between", sm: "center" },
+            gap: "30px",
             flexWrap: "wrap",
           }}
         >

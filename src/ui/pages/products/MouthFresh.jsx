@@ -7,7 +7,7 @@ import { useStyles } from "./Style";
 const MouthFresh = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [mouthFreshner, setmouthFreshner] = React.useState(["49", "49", "49", "49", "49", "49", "200", "300"]);
+  const [mouthFreshner, setmouthFreshner] = React.useState(["49", "49", "49", "49", "49", "49", "200", "300", "10", "5"]);
  
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -52,8 +52,8 @@ const MouthFresh = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
             flexWrap: "wrap",
           }}
         >

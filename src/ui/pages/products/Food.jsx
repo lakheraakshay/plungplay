@@ -7,10 +7,10 @@ import { useStyles } from "./Style";
 const Food = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [pasta, setPasta] = React.useState(["169", "169", "169"]);
-  const [sauces, setSauces] = React.useState(["89", "89", "89", "89"]);
+  const [pasta, setPasta] = React.useState(["25", "25", "25"]);
+  const [sauces, setSauces] = React.useState(["89", "89", "1", "139"]);
   const [evolve, setEvolve] = React.useState([
-    "70",
+    "80",
     "70",
     "70",
     "70",
@@ -22,14 +22,25 @@ const Food = () => {
     "70",
   ]);
   const [jam, setJam] = React.useState([
-    "299",
-    "299",
-    "299",
-    "299",
-    "299",
-    "299",
-    "299",
-    "299",
+    "199",
+    "199",
+    "199",
+    "199",
+    "199",
+    "199",
+    "199",
+    "199",
+  ]);
+  const [healthySnack, sethealthySnack] = React.useState([
+    "80",
+    "80",
+    "80",
+    "80",
+    "80",
+    "80",
+    "149",
+    "149",
+    "149",
   ]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -85,6 +96,45 @@ const Food = () => {
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
                   alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: {item}/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Healthy Snacks
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "space-between", sm: "center" },
+            gap: "55px",
+            flexWrap: "wrap",
+          }}
+        >
+          {healthySnack.map((item, i) => (
+            <>
+              <Box sx={{ width: "240px" }}>
+                <img
+                  src={require(`../../assets/home/healthysnack (${i + 1}).png`)}
+                  alt=""
+                  height={320}
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />

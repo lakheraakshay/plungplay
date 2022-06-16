@@ -64,7 +64,7 @@ const About = () => {
           </Grid>
         </Container>
       </Box>
-
+{/* 
       <Container fixed sx={{ margin: "40px auto" }}>
         <Grid
           container
@@ -140,43 +140,43 @@ const About = () => {
             </Box>
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
 
       <Grid
         container
         spacing={0}
         direction="row"
-        justifyContent="flex-start"
+        justifyContent="center"
         alignItems="stretch"
         alignContent="stretch"
         wrap="wrap"
         // sx={{ marginTop: "-8px" }}
       >
-        <Grid item xl="6" md="6" xs="12">
+        {/* <Grid item xl="6" md="6" xs="12">
           <img
             src={require("../../assets/home/businessgrowth.webp")}
             alt=""
             style={{ width: '100%' }}
           />
-        </Grid>
-        <Grid item xl="6" md="6" xs="12" sx={{ background: "#F6F6F6" }}>
-          <Box sx={{ padding: { md: "25px 25px 40px 40px", xs: "20px" } }}>
-            <Typography fontSize="20px" color="#323131" padding="20px">
-              <div style={{ fontWeight: "bold", marginBottom: "40px", fontSize: 32 }}>
+        </Grid> */}
+        <Grid item xl="10" md="10" xs="12" sx={{ background: "#F6F6F6", marginTop: 5 }}>
+          <Box sx={{ padding: { md: "0px 30px 0px 40px", xs: "20px" } }}>
+            <Typography fontSize="19px" color="#323131" padding="20px">
+              <div style={{ fontWeight: "bold", marginBottom: "20px", fontSize: 25 }}>
                 At Stalwart, we are building:
               </div>
               <ul>
-                <li style={{ marginBottom: "30px" }}>
+                <li style={{ marginBottom: "20px" }}>
                   India’s fastest growing 'Route to Market company' that makes
                   market entry and presence quick, easy, affordable and hassle
                   free! No wonder FMCG Brands love us.
                 </li>
-                <li style={{ marginBottom: "30px" }}>
+                <li style={{ marginBottom: "20px" }}>
                   India’s largest and widest Sales & Distribution Network. Our
                   Channel partners see huge merit in working with us since we’re
                   a multi-brand organization with a massive brand portfolio.
                 </li>
-                <li style={{ marginBottom: "30px" }}>
+                <li>
                   India’s fastest growing FMCG (F&B & HPC) Sales Team to offer a
                   ‘Plug-N-Play’ sales infrastructure to our clients.
                 </li>

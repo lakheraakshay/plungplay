@@ -472,7 +472,7 @@ const Home = () => {
                       fontWeight="700"
                       color="#070707"
                     >
-                      <CountUp end={10000} />+
+                      <CountUp end={12564} />
                     </Typography>
                     <Typography
                       fontSize="14px"

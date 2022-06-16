@@ -3,7 +3,8 @@ import { Container, Box } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import sv from "../../assets/home/sv.jpeg";
 import pramod from "../../assets/home/pramod1.jpg";
-import aditya from "../../assets/home/aditya1.jpg";
+import aditya from "../../assets/home/aditya2.jpg";
+import divya from "../../assets/home/divya.jpeg";
 
 const Team = () => {
   return (
@@ -44,7 +45,7 @@ const TeamCard = () => {
               <img
                 src={item?.img}
                 alt=""
-                style={{ width: "100%", height: "300px" }}
+                style={{ width: "100%", height: "400px" }}
               />
               <Box
                 sx={{
@@ -77,7 +78,7 @@ const data = [
   {
     name: "Divyashikha Gupta",
     role: "CEO & Managing Director-Group",
-    img: sv,
+    img: divya,
   },
   {
     name: "S. Venkateswaran",

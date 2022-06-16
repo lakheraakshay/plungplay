@@ -13,6 +13,7 @@ const Clients = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    centerMode: true,
     initialSlide: 0,
     responsive: [
       {
@@ -59,44 +60,78 @@ const Clients = () => {
         <br />
         <br />
         <Slider {...settings}>
-          <Box >
-            <img src={require("../../assets/home/brands (1).png")} alt="" width={'200px'}
+          <Box>
+            <img
+              src={require("../../assets/home/brands (1).png")}
+              alt=""
+              width={"200px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/brands (2).png")} alt="" width={'200px'}
+          <Box>
+            <img
+              src={require("../../assets/home/brands (2).png")}
+              alt=""
+              width={"200px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/brands (3).png")} alt="" width={'200px'}
+          <Box>
+            <img
+              src={require("../../assets/home/brands (3).png")}
+              alt=""
+              width={"200px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/cravova.jpg")} alt="" width={'200px'} height={'150px'}
+          <Box>
+            <img
+              src={require("../../assets/home/cravova.jpg")}
+              alt=""
+              width={"200px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/naturup.webp")} alt="" width={'200px'}
+          <Box>
+            <img
+              src={require("../../assets/home/naturup.webp")}
+              alt=""
+              width={"200px"}
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/brand6.jpeg")} alt="" width={'200px'}
+          <Box>
+            <img
+              src={require("../../assets/home/brand6.jpg")}
+              alt=""
+              width={"200px"}
+              height="100px"
               style={{ display: 'block', margin: '0 auto' }}
             />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/alphavedic.webp")} alt="" width={'200px'} />
+          <Box>
+            <img
+              src={require("../../assets/home/alphavedic.webp")}
+              alt=""
+              width={"200px"}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/stirred.webp")} alt="" width={'200px'} />
+          <Box>
+            <img
+              src={require("../../assets/home/stirred.webp")}
+              alt=""
+              width={"200px"} 
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
-          <Box >
-            <img src={require("../../assets/home/brand9.jpeg")} alt="" width={'200px'} height={'100px'} />
+          <Box>
+            <img
+              src={require("../../assets/home/brand9.jpeg")}
+              alt=""
+              width={"200px"} 
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </Box>
         </Slider>
       </Container>

@@ -7,28 +7,24 @@ import { useStyles } from "./Style";
 const Beaverage = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
-  const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
-  const [mojito, setMojito] = React.useState(["30", "30", "30", "30"]);
-  const [juice, setJuice] = React.useState(["450", "10"]);
-  const [icedTea, setIcedTea] = React.useState([
-    "160",
-    "99",
-    "99",
-    "160",
-    "160",
+  const [cockmock, setCockmock] = React.useState([
+    "80",
+    "80",
+    "80",
+    "80",
     "99",
     "99",
     "99",
     "99",
-    "160",
-    "160",
-    "160",
-    "160",
     "99",
     "99",
-    "99",
-    "160",
   ]);
+  const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
+  const [mojito, setMojito] = React.useState(["30", "30", "30", "30", "30", "30"]);
+  const [juice, setJuice] = React.useState(["450", "99"]);
+  const [icedTea, setIcedTea] = React.useState(["160", "99", "99"]);
+  const [kombucha, setKombucha] = React.useState(["160", "160", "160", "160", "160", "160", "160", "160"]);
+  const [probiotic, setProbiotic] = React.useState(["99", "99", "99", "99"]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -62,6 +58,44 @@ const Beaverage = () => {
         </Typography>
         <br />
         <Divider />
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Cocktail & Mocktail
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
+            flexWrap: "wrap",
+          }}
+        >
+          {cockmock.map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/cockmock1 (${i + 1}).png`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: {item}/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
@@ -110,8 +144,8 @@ const Beaverage = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
             flexWrap: "wrap",
           }}
         >
@@ -119,7 +153,7 @@ const Beaverage = () => {
             <>
               <Box sx={{ width: "260px" }}>
                 <img
-                  src={require(`../../assets/home/mojito (${i + 1}).jpg`)}
+                  src={require(`../../assets/home/mojito ${i + 1}.jpeg`)}
                   alt=""
                   className={classes.productsImg}
                   onClick={handleOpen}
@@ -224,8 +258,8 @@ const Beaverage = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
             flexWrap: "wrap",
           }}
         >
@@ -233,7 +267,83 @@ const Beaverage = () => {
             <>
               <Box sx={{ width: "260px" }}>
                 <img
-                  src={require(`../../assets/home/icedteacan (${i + 1}).jpg`)}
+                  src={require(`../../assets/home/icetea${i + 1}.png`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: {item}/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Kombucha
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
+            flexWrap: "wrap",
+          }}
+        >
+          {kombucha.map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/kombucha${i + 1}.png`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: {item}/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Probiotic Drink
+        </Typography>
+        <br />
+        <Divider /> <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
+            flexWrap: "wrap",
+          }}
+        >
+          {probiotic.map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/probiotic${i + 1}.png`)}
                   alt=""
                   className={classes.productsImg}
                   onClick={handleOpen}

@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useStyles } from "./Style";
 
+
 const Beaverage = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -42,20 +43,176 @@ const Beaverage = () => {
         <Divider />
         <br />
         <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Cold Coffee
+        </Typography>
         <br />
+        <Divider />        <br />
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: { md: 'space-between', sm: 'center' },
             gap: "30px",
             flexWrap: "wrap",
           }}
         >
-          {new Array(9).fill().map(() => (
+          {new Array(4).fill().map((item, i) => (
             <>
               <Box sx={{ width: "260px" }}>
                 <img
-                  src={require("../../assets/home/prodetail (2).png")}
+                  src={require(`../../assets/home/coldcofee (${i + 1}).jpg`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 120/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Mojitos
+        </Typography>
+        <br />
+        <Divider />        <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: 'space-between', sm: 'center' },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {new Array(4).fill().map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/mojito (${i + 1}).jpg`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 120/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Juice
+        </Typography>
+        <br />
+        <Divider />        <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: 'start', sm: 'center' },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {new Array(2).fill().map((item, i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/juice (${i + 1}).jpg`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 120/-
+                </Typography>
+              </Box>
+            </>
+          ))}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Insta Green Tea
+        </Typography>
+        <br />
+        <Divider />        <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: 'space-between', sm: 'center' },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* {new Array(8).fill().map(() => (
+            <> */}
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 120/-
+                </Typography>
+              </Box>
+            {/* </>
+          ))} */}
+        </Box>
+        <br />
+        <br />
+        <Typography fontSize="24px" fontWeight="500" color="initial">
+          Iced Tea
+        </Typography>
+        <br />
+        <Divider />        <br />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: { md: 'space-between', sm: 'center' },
+            gap: "30px",
+            flexWrap: "wrap",
+          }}
+        >
+          {new Array(17).fill().map((item,i) => (
+            <>
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/icedteacan (${i + 1}).jpg`)}
                   alt=""
                   className={classes.productsImg}
                   onClick={handleOpen}

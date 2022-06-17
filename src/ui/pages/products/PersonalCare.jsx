@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Box, Divider, TextField, Button } from "@mui/material/";
+import {
+  Container,
+  Box,
+  Divider,
+  TextField,
+  Button,
+  Grid,
+} from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useStyles } from "./Style";
@@ -46,38 +53,110 @@ const PersonalCare = () => {
         <Divider />
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
-          Shampoo
-        </Typography>
-        <br />
-        <Divider /> <br />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
-            flexWrap: "wrap",
-          }}
+        <Grid
+          container
+          spacing={0}
+          direction="row"
+          justifyContent="space-between"
+          alignItems="stretch"
+          alignContent="center"
+          wrap="wrap"
         >
-          <Box sx={{ width: "260px" }}>
-            <img
-              src={require(`../../assets/home/shampoo 1.png`)}
-              alt=""
-              className={classes.productsImg}
-              onClick={handleOpen}
-            />
-            <br />
-            <Typography
-              mt="10px"
-              textAlign="center"
-              fontSize="20px"
-              fontWeight="500"
-              color="initial"
-            >
-              MRP: 595/-
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            // sx={{
+            //   paddingLeft: { md: "50px", xs: "10px" },
+            //   paddingRight: { md: "50px", xs: "10px" },
+            //   paddingTop: { md: "50px", xs: "10px" },
+            //   paddingBottom: { md: "0", xs: "10px" },
+            // }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Shampoo
             </Typography>
-          </Box>
-        </Box>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require(`../../assets/home/shampoo 1.png`)}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 595/-
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xl="9"
+            md="9"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              // paddingTop: { md: "50px", xs: "10px" },
+              // paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Coconut Oil
+            </Typography>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "start", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              {coconutOil.map((item, i) => (
+                <>
+                  <Box sx={{ width: "260px" }}>
+                    <img
+                      src={require(`../../assets/home/coconutoil ${i + 1}.png`)}
+                      alt=""
+                      className={classes.productsImg}
+                      onClick={handleOpen}
+                    />
+                    <br />
+                    <Typography
+                      mt="10px"
+                      textAlign="center"
+                      fontSize="20px"
+                      fontWeight="500"
+                      color="initial"
+                    >
+                      MRP: {item}/-
+                    </Typography>
+                  </Box>
+                </>
+              ))}
+            </Box>
+          </Grid>
+        </Grid>
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
@@ -156,7 +235,7 @@ const PersonalCare = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
           Coconut Oil
         </Typography>
         <br />
@@ -193,44 +272,200 @@ const PersonalCare = () => {
           ))}
         </Box>
         <br />
-        <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
-          Rose Water
-        </Typography>
-        <br />
-        <Divider /> <br />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
-            flexWrap: "wrap",
-          }}
+        <br /> */}
+        <Grid
+          container
+          spacing={0}
+          direction="row"
+          justifyContent="space-between"
+          alignItems="stretch"
+          alignContent="center"
+          wrap="wrap"
         >
-          {/* {new Array(8).fill().map(() => (
-            <> */}
-          <Box sx={{ width: "260px" }}>
-            <img
-              src={require("../../assets/home/rosewater.png")}
-              alt=""
-              className={classes.productsImg}
-              onClick={handleOpen}
-            />
-            <br />
-            <Typography
-              mt="10px"
-              textAlign="center"
-              fontSize="20px"
-              fontWeight="500"
-              color="initial"
-            >
-              MRP: 109/-
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              paddingTop: { md: "50px", xs: "10px" },
+              paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Rose Water
             </Typography>
-          </Box>
-        </Box>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/rosewater.png")}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 109/-
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              paddingTop: { md: "50px", xs: "10px" },
+              paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Scrub Cream
+            </Typography>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/scrubcream.png")}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 299/-
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              paddingTop: { md: "50px", xs: "10px" },
+              paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Mud Pack
+            </Typography>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/mudpack.jpeg")}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 289/-
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              paddingTop: { md: "50px", xs: "10px" },
+              paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Sunscreen
+            </Typography>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/sunscream.png")}
+                  alt=""
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 445/-
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
           Scrub Cream
         </Typography>
         <br />
@@ -243,8 +478,6 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {/* {new Array(8).fill().map(() => (
-            <> */}
           <Box sx={{ width: "260px" }}>
             <img
               src={require("../../assets/home/scrubcream.png")}
@@ -267,7 +500,7 @@ const PersonalCare = () => {
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
-         Mud Pack
+          Mud Pack
         </Typography>
         <br />
         <Divider /> <br />
@@ -279,8 +512,6 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {/* {new Array(8).fill().map(() => (
-            <> */}
           <Box sx={{ width: "260px" }}>
             <img
               src={require("../../assets/home/mudpack.jpeg")}
@@ -315,8 +546,6 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          {/* {new Array(8).fill().map(() => (
-            <> */}
           <Box sx={{ width: "260px" }}>
             <img
               src={require("../../assets/home/sunscream.png")}
@@ -335,7 +564,7 @@ const PersonalCare = () => {
               MRP: 445/-
             </Typography>
           </Box>
-        </Box>
+        </Box> */}
       </Container>
       <Modal
         open={open}

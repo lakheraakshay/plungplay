@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Divider, TextField, Button } from "@mui/material/";
+import { Container, Box, Divider, TextField, Button, Grid } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import { useStyles } from "./Style";
@@ -21,10 +21,26 @@ const Beaverage = () => {
     "99",
   ]);
   const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
-  const [mojito, setMojito] = React.useState(["30", "30", "30", "30", "30", "30"]);
+  const [mojito, setMojito] = React.useState([
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+    "30",
+  ]);
   const [juice, setJuice] = React.useState(["450", "99"]);
   const [icedTea, setIcedTea] = React.useState(["160", "99", "99"]);
-  const [kombucha, setKombucha] = React.useState(["160", "160", "160", "160", "160", "160", "160", "160"]);
+  const [kombucha, setKombucha] = React.useState([
+    "160",
+    "160",
+    "160",
+    "160",
+    "160",
+    "160",
+    "160",
+    "160",
+  ]);
   const [probiotic, setProbiotic] = React.useState(["99", "99", "99", "99"]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -61,7 +77,6 @@ const Beaverage = () => {
         <Divider />
         <br />
         <br />
-
         <Typography fontSize="24px" fontWeight="500" color="initial">
           Cocktail & Mocktail
         </Typography>
@@ -175,9 +190,7 @@ const Beaverage = () => {
             </>
           ))}
         </Box>
-        <br />
-        <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
           Juice
         </Typography>
         <br />
@@ -212,45 +225,118 @@ const Beaverage = () => {
               </Box>
             </>
           ))}
-        </Box>
+        </Box> */}
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
-          Insta Green Tea
-        </Typography>
-        <br />
-        <Divider /> <br />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
-            flexWrap: "wrap",
-          }}
+        <Grid
+          container
+          spacing={0}
+          direction="row"
+          justifyContent="space-between"
+          alignItems="stretch"
+          alignContent="center"
+          wrap="wrap"
         >
-          {/* {new Array(8).fill().map(() => (
-            <> */}
-          <Box sx={{ width: "260px" }}>
-            <img
-              src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
-              alt=""
-              className={classes.productsImg}
-              onClick={handleOpen}
-            />
-            <br />
-            <Typography
-              mt="10px"
-              textAlign="center"
-              fontSize="20px"
-              fontWeight="500"
-              color="initial"
-            >
-              MRP: 500/-
+          <Grid
+            item
+            xl="3"
+            md="3"
+            xs="12"
+            // sx={{
+            //   paddingLeft: { md: "50px", xs: "10px" },
+            //   paddingRight: { md: "50px", xs: "10px" },
+            //   paddingTop: { md: "50px", xs: "10px" },
+            //   paddingBottom: { md: "0", xs: "10px" },
+            // }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Insta Green Tea
             </Typography>
-          </Box>
-          {/* </>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "space-between", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              {/* {new Array(8).fill().map(() => (
+            <> */}
+              <Box sx={{ width: "260px" }}>
+                <img
+                  src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
+                  alt=""
+                  height={"260px"}
+                  className={classes.productsImg}
+                  onClick={handleOpen}
+                />
+                <br />
+                <Typography
+                  mt="10px"
+                  textAlign="center"
+                  fontSize="20px"
+                  fontWeight="500"
+                  color="initial"
+                >
+                  MRP: 500/-
+                </Typography>
+              </Box>
+              {/* </>
           ))} */}
-        </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            xl="9"
+            md="9"
+            xs="12"
+            sx={{
+              paddingLeft: { md: "50px", xs: "10px" },
+              paddingRight: { md: "50px", xs: "10px" },
+              // paddingTop: { md: "50px", xs: "10px" },
+              // paddingBottom: { md: "0", xs: "10px" },
+            }}
+          >
+            <Typography fontSize="24px" fontWeight="500" color="initial">
+              Juice
+            </Typography>
+            <br />
+            <Divider /> <br />
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "start", sm: "center" },
+                gap: "30px",
+                flexWrap: "wrap",
+              }}
+            >
+              {juice.map((item, i) => (
+                <>
+                  <Box sx={{ width: "260px" }}>
+                    <img
+                      src={require(`../../assets/home/juice (${i + 1}).jpg`)}
+                      alt=""
+                      className={classes.productsImg}
+                      onClick={handleOpen}
+                    />
+                    <br />
+                    <Typography
+                      mt="10px"
+                      textAlign="center"
+                      fontSize="20px"
+                      fontWeight="500"
+                      color="initial"
+                    >
+                      MRP: {item}/-
+                    </Typography>
+                  </Box>
+                </>
+              ))}
+            </Box>
+          </Grid>
+        </Grid>
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
@@ -365,7 +451,7 @@ const Beaverage = () => {
             </>
           ))}
         </Box>
-        <br/>
+        {/* <br/>
         <br/>
         <Box
           onMouseOver={() => setActive(1)}
@@ -405,7 +491,7 @@ const Beaverage = () => {
               </Typography>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
       </Container>
       <Modal
         open={open}
@@ -484,8 +570,6 @@ const Beaverage = () => {
           </Box>
         </Box>
       </Modal>
-
-
     </>
   );
 };

@@ -6,7 +6,7 @@ const Gallery = () => {
             <div>
                 <img src={require("../../assets/home/gallery.png")} alt="" style={{ width: '100%' }} />
             </div>
-            <img src={require("../../assets/home/gallerygrid.png")} alt="" style={{ width: '100%' ,marginBottom:'-10px'}} />
+            {/* <img src={require("../../assets/home/gallerygrid.png")} alt="" style={{ width: '100%' ,marginBottom:'-10px'}} /> */}
         </>
     )
 }

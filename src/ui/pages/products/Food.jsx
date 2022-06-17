@@ -54,6 +54,16 @@ const Food = () => {
     "149",
     "149",
     "149",
+    "80",
+    "70",
+    "70",
+    "70",
+    "70",
+    "70",
+    "70",
+    "70",
+    "70",
+    "70",
   ]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -137,8 +147,8 @@ const Food = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "55px",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "90px",
             flexWrap: "wrap",
           }}
         >
@@ -148,7 +158,7 @@ const Food = () => {
                 <img
                   src={require(`../../assets/home/healthysnack (${i + 1}).png`)}
                   alt=""
-                  height={320}
+                  height={i <= 7 ? "320" : "auto"}
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
@@ -205,7 +215,7 @@ const Food = () => {
             </>
           ))}
         </Box>
-        <br />
+        {/* <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
           Evolve
@@ -242,11 +252,11 @@ const Food = () => {
               </Box>
             </>
           ))}
-        </Box>
+        </Box> */}
         <br />
         <br />
         <Typography fontSize="24px" fontWeight="500" color="initial">
-          Jam
+          Fruit Spreads
         </Typography>
         <br />
         <Divider /> <br />

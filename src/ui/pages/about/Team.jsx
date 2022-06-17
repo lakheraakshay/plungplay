@@ -45,7 +45,7 @@ const TeamCard = () => {
               <img
                 src={item?.img}
                 alt=""
-                style={{ width: "100%", height: "300px" }}
+                style={{ width: "100%", height: "250px" }}
               />
               <Box
                 sx={{

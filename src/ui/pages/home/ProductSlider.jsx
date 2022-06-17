@@ -10,7 +10,7 @@ const ProductSlider = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 500,
     arrows: false,
     initialSlide: 0,
     responsive: [
@@ -45,7 +45,7 @@ const ProductSlider = () => {
       <Box sx={{ background: "#F1592A", padding: { md: "50px ", xs: "auto" } }}>
         <Container fixed>
           <Slider {...settings}>
-            {new Array(5).fill("").map((item, i) => (
+            {new Array(8).fill("").map((item, i) => (
               <>
                 <Box  >
                   <img

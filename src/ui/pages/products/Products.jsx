@@ -11,7 +11,7 @@ const Products = () => {
   const classes = useStyles();
 
   const [active, setActive] = React.useState();
-  
+
   const beverages = [
     "Coctail & Mocktail",
     "Juice",
@@ -20,7 +20,7 @@ const Products = () => {
     "Iced Tea",
     "Mojitos",
     "Insta Green Tea",
-  ]
+  ];
   const food = [
     "Pasta",
     "Jams",
@@ -29,15 +29,9 @@ const Products = () => {
     "Healthy Snacking",
     "Apple Ciders",
     "Cheese",
-  ]
+  ];
 
-  const personalCare = [
-    "Body Wash",
-    "Shampoo",
-    "Lotion",
-    "Oil",
-    "Serum",
-  ]
+  const personalCare = ["Body Wash", "Shampoo", "Lotion", "Oil", "Serum"];
 
   const mouthFreshner = [
     "After Smoke",
@@ -45,7 +39,7 @@ const Products = () => {
     "Energy Fresh",
     "Insta Tea",
     "Iced Tea",
-  ]
+  ];
 
   return (
     <>
@@ -77,11 +71,13 @@ const Products = () => {
             onMouseOut={() => setActive(null)}
             sx={{ width: { md: "573.46px", xs: "100%" } }}
           >
-            <img
-              src={require("../../assets/home/prodprod (1).png")}
-              alt=""
-              className={classes.productsImgCat}
-            />
+            <Link to="/products/beverage">
+              <img
+                src={require("../../assets/home/prodprod (1).png")}
+                alt=""
+                className={classes.productsImgCat}
+              />
+            </Link>
             <Box
               display={active == "1" ? "block" : "none"}
               className={classes.hoeverContainer}
@@ -130,11 +126,13 @@ const Products = () => {
             onMouseOut={() => setActive(null)}
             sx={{ width: { md: "573.46px", xs: "100%" } }}
           >
-            <img
-              src={require("../../assets/home/prodprod (4).png")}
-              alt=""
-              className={classes.productsImgCat}
-            />
+            <Link to="/products/food">
+              <img
+                src={require("../../assets/home/prodprod (4).png")}
+                alt=""
+                className={classes.productsImgCat}
+              />
+            </Link>
             <Box
               display={active == "2" ? "block" : "none"}
               className={classes.hoeverContainer}
@@ -183,11 +181,13 @@ const Products = () => {
             onMouseOut={() => setActive(null)}
             sx={{ width: { md: "573.46px", xs: "100%" } }}
           >
-            <img
-              src={require("../../assets/home/prodprod (3).png")}
-              alt=""
-              className={classes.productsImgCat}
-            />
+            <Link to="/products/mouth-freshner">
+              <img
+                src={require("../../assets/home/prodprod (3).png")}
+                alt=""
+                className={classes.productsImgCat}
+              />
+            </Link>
             <Box
               display={active == "3" ? "block" : "none"}
               className={classes.hoeverContainer}
@@ -236,11 +236,13 @@ const Products = () => {
             onMouseOut={() => setActive(null)}
             sx={{ width: { md: "573.46px", xs: "100%" } }}
           >
-            <img
-              src={require("../../assets/home/prodprod (2).png")}
-              alt=""
-              className={classes.productsImgCat}
-            />
+            <Link to="/products/personal-care">
+              <img
+                src={require("../../assets/home/prodprod (2).png")}
+                alt=""
+                className={classes.productsImgCat}
+              />
+            </Link>
             <Box
               display={active == "4" ? "block" : "none"}
               className={classes.hoeverContainer}

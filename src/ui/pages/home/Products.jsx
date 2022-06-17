@@ -81,7 +81,7 @@ const Products = () => {
             <Link to="/products/food">
               <Box>
                 <img
-                  src={require(`../../assets/home/homeprod (2).png`)}
+                  src={require(`../../assets/home/homeprod (6).png`)}
                   alt=""
                   style={{ display: "block", margin: "0 auto" }}
                   className={classes.productsImg}

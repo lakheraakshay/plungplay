@@ -15,10 +15,10 @@ const Food = () => {
     "149",
     "169",
     "149",
-    "159",
     "69",
     "149",
     "149",
+    "159",
     "159",
   ]);
   const [sauces, setSauces] = React.useState(["89", "89", "1", "139"]);
@@ -109,17 +109,17 @@ const Food = () => {
           sx={{
             display: "flex",
             justifyContent: { md: "start", sm: "center" },
-            gap: "55px",
+            gap: "125px",
             flexWrap: "wrap",
           }}
         >
           {pasta.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: "210px" }}>
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
                   alt=""
-                  height="330px"
+                  height="270px"
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />

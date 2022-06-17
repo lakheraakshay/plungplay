@@ -36,10 +36,10 @@ const Advantage = () => {
                 style={{
                   fontWeight: "bold",
                   marginBottom: "35px",
-                  fontSize: "22px",
+                  fontSize: "21px",
                 }}
               >
-                Traditional Supply Chain:
+                Stalwart Advantage Supply Chain:
               </div>
               <ul>
                 <li style={{ marginBottom: "20px" }}>

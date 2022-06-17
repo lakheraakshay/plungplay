@@ -37,8 +37,7 @@ const Products = () => {
     "After Smoke",
     "Emmunity",
     "Energy Fresh",
-    "Insta Tea",
-    "Iced Tea",
+    "Go Fresh"
   ];
 
   return (
@@ -128,7 +127,7 @@ const Products = () => {
           >
             <Link to="/products/food">
               <img
-                src={require("../../assets/home/prodprod (4).png")}
+                src={require("../../assets/home/prodprod (5).png")}
                 alt=""
                 className={classes.productsImgCat}
               />

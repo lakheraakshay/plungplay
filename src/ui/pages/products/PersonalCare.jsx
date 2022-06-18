@@ -120,7 +120,7 @@ const PersonalCare = () => {
             }}
           >
             <Typography fontSize="24px" fontWeight="500" color="initial">
-              Coconut Oil
+              Hair Oil
             </Typography>
             <br />
             <Divider /> <br />

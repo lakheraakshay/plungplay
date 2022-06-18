@@ -526,6 +526,18 @@ const Home = () => {
               background: "linear-gradient(180deg, #fff, #fff, #4a4a4a)",
             }}
           >
+            <div>
+              <Typography
+                sx={{
+                  fontSize: { md: "24px", xs: "20px" },
+                  color: "#F1592A",
+                  // background: "rgba(255,255,255,0.2)",
+                }}
+                fontWeight="700"
+              >
+                ASIAONE
+              </Typography>
+            </div>
             <Grid
               container
               spacing={0}
@@ -592,12 +604,12 @@ const Home = () => {
                 fontWeight="700"
               >
                 'Divyashikha Gupta' – 'CEO & Managing Director' – 'Stalwart
-                World Group' – Awarded as the 
-                <span className="redcol">
-                   {` ' World’s Greatest Leaders 2021-22 ' `}
+                World Group' – Awarded as the
+                <span className="bluecol">
+                  {` ' World’s Greatest Leaders 2021-22 ' `}
                 </span>
                 & 'Stalwart World' - Awarded as
-                <span className="redcol">{` ' World's Greatest Brand 2021-22 ' `}</span>
+                <span className="bluecol">{` ' World's Greatest Brand 2021-22 ' `}</span>
                 at the annual summit of AsiaOne.
               </Typography>
             </div>

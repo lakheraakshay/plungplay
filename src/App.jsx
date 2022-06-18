@@ -20,6 +20,7 @@ import Distributor from "./ui/pages/distriibutor/Distributor";
 import Contact from "./ui/pages/contact/Contact";
 import Gallery from "./ui/pages/gallery/Gallery";
 import Advantage from "./ui/pages/distriibutor/Advantage";
+import Career from "./ui/pages/career/career";
 
 // scroll to top
 const Wrapper = ({ children }) => {
@@ -54,6 +55,7 @@ function App() {
                 <Route path="manufactures" element={<Manufacturer />} />
                 <Route path="distributor" element={<Distributor />} />
                 <Route path="contact-us" element={<Contact />} />
+                <Route path="career" element={<Career />} />
                 <Route path="gallery" element={<Gallery />} />
                 <Route path="advantage" element={<Advantage />} />
               </Route>

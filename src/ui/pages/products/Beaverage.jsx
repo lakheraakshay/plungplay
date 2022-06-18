@@ -30,7 +30,7 @@ const Beaverage = () => {
     "30",
   ]);
   const [juice, setJuice] = React.useState(["450", "99"]);
-  const [icedTea, setIcedTea] = React.useState(["160", "99", "99"]);
+  const [icedTea, setIcedTea] = React.useState(["99", "99", "99", "99"]);
   const [kombucha, setKombucha] = React.useState([
     "160",
     "160",

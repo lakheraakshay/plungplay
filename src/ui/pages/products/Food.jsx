@@ -28,10 +28,17 @@ const Food = () => {
       price: "169",
     },
     {
-      gram: "500",
-      // gram: "5",
-      price: "149",
-      // price: "999",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
     },
     {
       price: "69",
@@ -40,10 +47,17 @@ const Food = () => {
       price: "149",
     },
     {
-      gram: "500",
-      // gram: "5",
-      price: "149",
-      // price: "999",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
     },
     {
       price: "159",
@@ -61,10 +75,17 @@ const Food = () => {
       price: "149",
     },
     {
-      gram: "500",
-      // gram: "5",
-      price: "149",
-      // price: "999",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
     },
     {
       price: "169",
@@ -91,21 +112,72 @@ const Food = () => {
       price: "159",
     },
     {
-      gram: "500",
-      // gram: "200",
-      // gram: "5",
-      price: "149",
-      // price: "69",
-      // price: "999",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "200",
+          price: "69",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
     },
   ]);
   const [sauces, setSauces] = React.useState([
-    "89",
-    "89",
-    "1",
-    "139",
-    "1",
-    "139",
+    {
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "200",
+          price: "89",
+        },
+        {
+          gram: "400",
+          price: "139",
+        },
+      ],
+    },
+    {
+      price: "69",
+    },
+    {
+      price: "1",
+    },
+    {
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "200",
+          price: "89",
+        },
+        {
+          gram: "400",
+          price: "139",
+        },
+      ],
+    },
+    {
+      price: "139",
+    },
+    {
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "1",
+          price: "139",
+        },
+        {
+          gram: "5",
+          price: "349",
+        },
+      ],
+    },
   ]);
   const [jam, setJam] = React.useState([
     "199",
@@ -119,58 +191,122 @@ const Food = () => {
   ]);
   const [healthySnack, sethealthySnack] = React.useState([
     {
-      gram: "50",
-      gram: "100",
-      price: "40",
-      price: "80",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
     },
     {
-      gram: "50",
-      gram: "100",
-      price: "40",
-      price: "80",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
     },
     {
-      gram: "50",
-      gram: "100",
-      price: "40",
-      price: "80",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
     },
     {
-      gram: "50",
-      gram: "100",
-      price: "40",
-      price: "80",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
     },
     {
-      gram: "50",
-      gram: "100",
-      price: "40",
-      price: "80",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
     },
     {
-      gram: "40",
-      gram: "65",
-      price: "99",
-      price: "149",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "50",
+          price: "40",
+        },
+        {
+          gram: "100",
+          price: "80",
+        },
+      ],
+    },
+
+    {
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "40",
+          price: "99",
+        },
+        {
+          gram: "65",
+          price: "149",
+        },
+      ],
     },
     {
-      gram: "40",
-      gram: "65",
-      price: "99",
-      price: "149",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "40",
+          price: "99",
+        },
+        {
+          gram: "65",
+          price: "149",
+        },
+      ],
     },
     {
-      gram: "40",
-      gram: "65",
-      price: "99",
-      price: "149",
-    },
-    {
-      gram: "40",
-      gram: "65",
-      price: "99",
-      price: "149",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "40",
+          price: "99",
+        },
+        {
+          gram: "65",
+          price: "149",
+        },
+      ],
     },
     {
       price: "70",
@@ -255,8 +391,8 @@ const Food = () => {
             <>
               <Box
                 sx={{ width: "210px" }}
-                // onMouseOver={() => setActive(i + 1)}
-                // onMouseOut={() => setActive(null)}
+                onMouseOver={() => setActive(i + 1)}
+                onMouseOut={() => setActive(null)}
               >
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
@@ -275,37 +411,54 @@ const Food = () => {
                 >
                   MRP: {item}/-
                 </Typography> */}
-                {item.gram ? (
+                {item.isMultiple ? (
                   <Box
                     // display={active == `${i + 1}` ? "block" : "none"}
                     className={classes.hoeverContainer}
                   >
-                    <Box
-                      sx={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        gap: "10px",
-                        justifyContent: { md: "space-between", xs: "center" },
-                      }}
-                    >
-                      <Typography
-                        fontSize="15px"
-                        fontWeight="500"
-                        sx={{ border: "1px solid #000000", padding: "10px" }}
-                      >
-                        {item.gram} gram
-                      </Typography>
-                      <Typography
-                        fontSize="15px"
-                        fontWeight="500"
-                        sx={{ border: "1px solid #000000", padding: "10px" }}
-                      >
-                        Rs {item.price}/-
-                      </Typography>
-                    </Box>
+                    {item.Fields.map((inItem) => {
+                      return (
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: "10px",
+                            margin: "5px auto",
+                            justifyContent: {
+                              md: "space-between",
+                              xs: "center",
+                            },
+                          }}
+                        >
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            {inItem.gram} gram
+                          </Typography>
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            Rs {inItem.price}/-
+                          </Typography>
+                        </Box>
+                      );
+                    })}
                   </Box>
                 ) : (
-                  <Box className={classes.hoeverContainer}>
+                  <Box
+                    // display={active == `${i + 1}` ? "block" : "none"}
+                    className={classes.hoeverContainer}
+                  >
                     <Typography
                       // mt="10px"
                       textAlign="center"
@@ -346,41 +499,45 @@ const Food = () => {
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
-                {/* <br />
-                <Typography
-                  mt="10px"
-                  textAlign="center"
-                  fontSize="20px"
-                  fontWeight="500"
-                  color="initial"
-                >
-                  MRP: {item}/-
-                </Typography> */}
-                {item.gram ? (
+                {item.isMultiple ? (
                   <Box className={classes.hoeverContainer}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        gap: "10px",
-                        justifyContent: { md: "space-between", xs: "center" },
-                      }}
-                    >
-                      <Typography
-                        fontSize="15px"
-                        fontWeight="500"
-                        sx={{ border: "1px solid #000000", padding: "10px" }}
-                      >
-                        {item.gram} gram
-                      </Typography>
-                      <Typography
-                        fontSize="15px"
-                        fontWeight="500"
-                        sx={{ border: "1px solid #000000", padding: "10px" }}
-                      >
-                        Rs {item.price}/-
-                      </Typography>
-                    </Box>
+                    {item.Fields.map((inItem) => {
+                      return (
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: "10px",
+                            margin: "5px auto",
+                            justifyContent: {
+                              md: "space-between",
+                              xs: "center",
+                            },
+                          }}
+                        >
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            {inItem.gram} gram
+                          </Typography>
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            Rs {inItem.price}/-
+                          </Typography>
+                        </Box>
+                      );
+                    })}
                   </Box>
                 ) : (
                   <Box className={classes.hoeverContainer}>
@@ -424,16 +581,59 @@ const Food = () => {
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
-                <br />
-                <Typography
-                  mt="10px"
-                  textAlign="center"
-                  fontSize="20px"
-                  fontWeight="500"
-                  color="initial"
-                >
-                  MRP: {item}/-
-                </Typography>
+                {item.isMultiple ? (
+                  <Box className={classes.hoeverContainer}>
+                    {item.Fields.map((inItem) => {
+                      return (
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexWrap: "wrap",
+                            gap: "10px",
+                            margin: "5px auto",
+                            justifyContent: {
+                              md: "space-between",
+                              xs: "center",
+                            },
+                          }}
+                        >
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            {inItem.gram} gram
+                          </Typography>
+                          <Typography
+                            fontSize="15px"
+                            fontWeight="500"
+                            sx={{
+                              border: "1px solid #000000",
+                              padding: "10px",
+                            }}
+                          >
+                            Rs {inItem.price}/-
+                          </Typography>
+                        </Box>
+                      );
+                    })}
+                  </Box>
+                ) : (
+                  <Box className={classes.hoeverContainer}>
+                    <Typography
+                      // mt="10px"
+                      textAlign="center"
+                      fontSize="18px"
+                      fontWeight="500"
+                      color="initial"
+                    >
+                      MRP: {item.price}/-
+                    </Typography>
+                  </Box>
+                )}
               </Box>
             </>
           ))}

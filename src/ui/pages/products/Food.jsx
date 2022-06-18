@@ -8,75 +8,104 @@ const Food = () => {
   const classes = useStyles();
   const [active, setActive] = React.useState();
   const [open, setOpen] = React.useState(false);
-  const [pasta, setPasta] = React.useState([{
-    "gram" : "100",
-    "price" : "25" 
-  },
-  {
-    "gram" : "100",
-    "price" : "25" 
-  },
-  {
-    "gram" : "100",
-    "price" : "25" 
-  },
-  {
-    "gram" : "100",
-    "price" : "149" 
-  },
-  {
-    "gram" : "100",
-    "price" : "149" 
-  },
-  {
-    "gram" : "100",
-    "price" : "169" 
-  },{
-    "gram" : "100",
-    "price" : "149" 
-  },{
-    "gram" : "100",
-    "price" : "69" 
-  },
-  {
-    "gram" : "100",
-    "price" : "149" 
-  },{
-    "gram" : "100",
-    "price" : "149" 
-  },{
-    "gram" : "100",
-    "price" : "159" 
-  },{
-    "gram" : "100",
-    "price" : "159" 
-  },
-  
-    // "25",
-    // "25",
-    // "25",
-    // "149",
-    // "149",
-    // "169",
-    // "149",
-    // "69",
-    // "149",
-    // "149",
-    // "159",
-    // "159",
+  const [pasta, setPasta] = React.useState([
+    {
+      price: "25",
+    },
+    {
+      price: "25",
+    },
+    {
+      price: "25",
+    },
+    {
+      price: "149",
+    },
+    {
+      price: "149",
+    },
+    {
+      price: "169",
+    },
+    {
+      gram: "500",
+      // gram: "5",
+      price: "149",
+      // price: "999",
+    },
+    {
+      price: "69",
+    },
+    {
+      price: "149",
+    },
+    {
+      gram: "500",
+      // gram: "5",
+      price: "149",
+      // price: "999",
+    },
+    {
+      price: "159",
+    },
+    {
+      price: "159",
+    },
+    {
+      price: "169",
+    },
+    {
+      price: "20",
+    },
+    {
+      price: "149",
+    },
+    {
+      gram: "500",
+      // gram: "5",
+      price: "149",
+      // price: "999",
+    },
+    {
+      price: "169",
+    },
+    {
+      price: "169",
+    },
+    {
+      price: "169",
+    },
+    {
+      price: "79",
+    },
+    {
+      price: "79",
+    },
+    {
+      price: "159",
+    },
+    {
+      price: "159",
+    },
+    {
+      price: "159",
+    },
+    {
+      gram: "500",
+      // gram: "200",
+      // gram: "5",
+      price: "149",
+      // price: "69",
+      // price: "999",
+    },
   ]);
-  const [sauces, setSauces] = React.useState(["89", "89", "1", "139"]);
-  const [evolve, setEvolve] = React.useState([
-    "80",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
+  const [sauces, setSauces] = React.useState([
+    "89",
+    "89",
+    "1",
+    "139",
+    "1",
+    "139",
   ]);
   const [jam, setJam] = React.useState([
     "199",
@@ -89,25 +118,90 @@ const Food = () => {
     "199",
   ]);
   const [healthySnack, sethealthySnack] = React.useState([
-    "80",
-    "80",
-    "80",
-    "80",
-    "80",
-    "80",
-    "149",
-    "149",
-    "149",
-    "80",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
-    "70",
+    {
+      gram: "50",
+      gram: "100",
+      price: "40",
+      price: "80",
+    },
+    {
+      gram: "50",
+      gram: "100",
+      price: "40",
+      price: "80",
+    },
+    {
+      gram: "50",
+      gram: "100",
+      price: "40",
+      price: "80",
+    },
+    {
+      gram: "50",
+      gram: "100",
+      price: "40",
+      price: "80",
+    },
+    {
+      gram: "50",
+      gram: "100",
+      price: "40",
+      price: "80",
+    },
+    {
+      gram: "40",
+      gram: "65",
+      price: "99",
+      price: "149",
+    },
+    {
+      gram: "40",
+      gram: "65",
+      price: "99",
+      price: "149",
+    },
+    {
+      gram: "40",
+      gram: "65",
+      price: "99",
+      price: "149",
+    },
+    {
+      gram: "40",
+      gram: "65",
+      price: "99",
+      price: "149",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
+    {
+      price: "70",
+    },
   ]);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -161,8 +255,8 @@ const Food = () => {
             <>
               <Box
                 sx={{ width: "210px" }}
-                onMouseOver={() => setActive(i + 1)}
-                onMouseOut={() => setActive(null)}
+                // onMouseOver={() => setActive(i + 1)}
+                // onMouseOut={() => setActive(null)}
               >
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
@@ -181,34 +275,48 @@ const Food = () => {
                 >
                   MRP: {item}/-
                 </Typography> */}
-                <Box
-                  display={active == `${i + 1}` ? "block" : "none"}
-                  className={classes.hoeverContainer}
-                >
+                {item.gram ? (
                   <Box
-                    sx={{
-                      display: "flex",
-                      flexWrap: "wrap",
-                      gap: "10px",
-                      justifyContent: { md: "space-between", xs: "center" },
-                    }}
+                    // display={active == `${i + 1}` ? "block" : "none"}
+                    className={classes.hoeverContainer}
                   >
-                    <Typography
-                      fontSize="15px"
-                      fontWeight="500"
-                      sx={{ border: "1px solid #000000", padding: "10px" }}
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                        justifyContent: { md: "space-between", xs: "center" },
+                      }}
                     >
-                      {item.gram} gram
-                    </Typography>
+                      <Typography
+                        fontSize="15px"
+                        fontWeight="500"
+                        sx={{ border: "1px solid #000000", padding: "10px" }}
+                      >
+                        {item.gram} gram
+                      </Typography>
+                      <Typography
+                        fontSize="15px"
+                        fontWeight="500"
+                        sx={{ border: "1px solid #000000", padding: "10px" }}
+                      >
+                        Rs {item.price}/-
+                      </Typography>
+                    </Box>
+                  </Box>
+                ) : (
+                  <Box className={classes.hoeverContainer}>
                     <Typography
-                      fontSize="15px"
+                      // mt="10px"
+                      textAlign="center"
+                      fontSize="18px"
                       fontWeight="500"
-                      sx={{ border: "1px solid #000000", padding: "10px" }}
+                      color="initial"
                     >
-                      Rs {item.price}/-
+                      MRP: {item.price}/-
                     </Typography>
                   </Box>
-                </Box>
+                )}
               </Box>
             </>
           ))}
@@ -238,7 +346,7 @@ const Food = () => {
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
-                <br />
+                {/* <br />
                 <Typography
                   mt="10px"
                   textAlign="center"
@@ -247,7 +355,46 @@ const Food = () => {
                   color="initial"
                 >
                   MRP: {item}/-
-                </Typography>
+                </Typography> */}
+                {item.gram ? (
+                  <Box className={classes.hoeverContainer}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                        justifyContent: { md: "space-between", xs: "center" },
+                      }}
+                    >
+                      <Typography
+                        fontSize="15px"
+                        fontWeight="500"
+                        sx={{ border: "1px solid #000000", padding: "10px" }}
+                      >
+                        {item.gram} gram
+                      </Typography>
+                      <Typography
+                        fontSize="15px"
+                        fontWeight="500"
+                        sx={{ border: "1px solid #000000", padding: "10px" }}
+                      >
+                        Rs {item.price}/-
+                      </Typography>
+                    </Box>
+                  </Box>
+                ) : (
+                  <Box className={classes.hoeverContainer}>
+                    <Typography
+                      // mt="10px"
+                      textAlign="center"
+                      fontSize="18px"
+                      fontWeight="500"
+                      color="initial"
+                    >
+                      MRP: {item.price}/-
+                    </Typography>
+                  </Box>
+                )}
               </Box>
             </>
           ))}
@@ -262,8 +409,8 @@ const Food = () => {
         <Box
           sx={{
             display: "flex",
-            justifyContent: { md: "space-between", sm: "center" },
-            gap: "30px",
+            justifyContent: { md: "start", sm: "center" },
+            gap: "60px",
             flexWrap: "wrap",
           }}
         >
@@ -273,7 +420,7 @@ const Food = () => {
                 <img
                   src={require(`../../assets/home/sauce${i + 1}.jpg`)}
                   alt=""
-                  height="380px"
+                  height={i <= 3 ? "380px" : "380px"}
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />

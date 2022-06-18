@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
 import Snackbar from "@mui/material/Snackbar";
+import { Link } from "react-router-dom";
 
 const initialForm = { name: "", email: "", contact: "", message: "" };
 const Contact = () => {
@@ -103,18 +104,33 @@ const Contact = () => {
           style={{ width: "100%" }}
         />
       </div>
-      <Container fixed sx={{ margin: { md: "100px auto" } }}>
+      <Container fixed sx={{ margin: { md: "50px auto" } }}>
         <Grid
           container
           spacing={0}
           direction="row"
-          justifyContent="flex-start"
+          justifyContent="space-between"
           alignItems="center"
           alignContent="center"
           wrap="wrap"
           sx={{ marginTop: "-8px" }}
         >
           <Grid item xl="5" md="5" xs="12">
+            <a
+              target="_blank"
+              style={{textDecoration: "none"}}
+              href="https://www.google.com/maps/place/Stalwart+World/@19.1834447,72.8326363,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7b72aaef89507:0x3d602802565715f9!8m2!3d19.1834447!4d72.8326363"
+            >
+              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                <img src={require("../../assets/home/address.png")} alt="" />
+                <Typography gutterBottom fontSize="20px" color="initial">
+                  143-147, 1st Floor, IJMIMA building, Mindspace Opposite
+                  Interface Building, behind Goregaon Sports Complex, Malad
+                  West, Mumbai, Maharashtra - 400064
+                </Typography>
+              </Box>
+            </a>
+            <br />
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img src={require("../../assets/home/contact (2).png")} alt="" />
               <Typography gutterBottom fontSize="20px" color="initial">
@@ -143,7 +159,7 @@ const Contact = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xl="7" md="7" xs="12">
+          <Grid item xl="6" md="6" xs="12">
             <Box
               sx={{
                 background: "#F6F6F6",

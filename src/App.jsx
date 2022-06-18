@@ -58,6 +58,10 @@ function App() {
                 <Route path="career" element={<Career />} />
                 <Route path="gallery" element={<Gallery />} />
                 <Route path="advantage" element={<Advantage />} />
+                <Route path='/address' component={() => { 
+     window.location.href = 'https://example.com/1234'; 
+     return null;
+}}/>
               </Route>
               <Route path="*" element={<Page404 />} />
             </Routes>

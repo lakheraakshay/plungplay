@@ -13,12 +13,12 @@ const Beaverage = () => {
     "80",
     "80",
     "80",
-    "99",
-    "99",
-    "99",
-    "99",
-    "99",
-    "99",
+    "50",
+    "50",
+    "60",
+    "50",
+    "60",
+    "60",
   ]);
   const [coffee, setCoffee] = React.useState(["50", "50", "50", "50"]);
   const [mojito, setMojito] = React.useState([
@@ -29,7 +29,7 @@ const Beaverage = () => {
     "30",
     "30",
   ]);
-  const [juice, setJuice] = React.useState(["450", "99"]);
+  const [juice, setJuice] = React.useState(["15", "99"]);
   const [icedTea, setIcedTea] = React.useState(["99", "99", "99", "99"]);
   const [kombucha, setKombucha] = React.useState([
     "160",

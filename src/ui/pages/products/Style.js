@@ -17,9 +17,9 @@ export const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 0px 31px rgba(0, 0, 0, 0.06)",
     height: "auto",
     borderRadius: "10px",
-    padding: "30px",
+    padding: "20px 10px",
     [theme.breakpoints.down(600)]: {
-      padding: "20px",
+      padding: "15px 10px",
     },
   },
   productsImgCat: {

@@ -6,20 +6,64 @@ import { useStyles } from "./Style";
 
 const Food = () => {
   const classes = useStyles();
+  const [active, setActive] = React.useState();
   const [open, setOpen] = React.useState(false);
-  const [pasta, setPasta] = React.useState([
-    "25",
-    "25",
-    "25",
-    "149",
-    "149",
-    "169",
-    "149",
-    "69",
-    "149",
-    "149",
-    "159",
-    "159",
+  const [pasta, setPasta] = React.useState([{
+    "gram" : "100",
+    "price" : "25" 
+  },
+  {
+    "gram" : "100",
+    "price" : "25" 
+  },
+  {
+    "gram" : "100",
+    "price" : "25" 
+  },
+  {
+    "gram" : "100",
+    "price" : "149" 
+  },
+  {
+    "gram" : "100",
+    "price" : "149" 
+  },
+  {
+    "gram" : "100",
+    "price" : "169" 
+  },{
+    "gram" : "100",
+    "price" : "149" 
+  },{
+    "gram" : "100",
+    "price" : "69" 
+  },
+  {
+    "gram" : "100",
+    "price" : "149" 
+  },{
+    "gram" : "100",
+    "price" : "149" 
+  },{
+    "gram" : "100",
+    "price" : "159" 
+  },{
+    "gram" : "100",
+    "price" : "159" 
+  },
+  
+    // "25",
+    // "25",
+    // "25",
+    // "149",
+    // "149",
+    // "169",
+    // "149",
+    // "69",
+    // "149",
+    // "149",
+    // "159",
+    // "159",
   ]);
   const [sauces, setSauces] = React.useState(["89", "89", "1", "139"]);
   const [evolve, setEvolve] = React.useState([
@@ -115,7 +159,11 @@ const Food = () => {
         >
           {pasta.map((item, i) => (
             <>
-              <Box sx={{ width: "210px" }}>
+              <Box
+                sx={{ width: "210px" }}
+                onMouseOver={() => setActive(i + 1)}
+                onMouseOut={() => setActive(null)}
+              >
                 <img
                   src={require(`../../assets/home/pasta ${i + 1}.png`)}
                   alt=""
@@ -123,7 +171,7 @@ const Food = () => {
                   className={classes.productsImg}
                   onClick={handleOpen}
                 />
-                <br />
+                {/* <br />
                 <Typography
                   mt="10px"
                   textAlign="center"
@@ -132,7 +180,35 @@ const Food = () => {
                   color="initial"
                 >
                   MRP: {item}/-
-                </Typography>
+                </Typography> */}
+                <Box
+                  display={active == `${i + 1}` ? "block" : "none"}
+                  className={classes.hoeverContainer}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "10px",
+                      justifyContent: { md: "space-between", xs: "center" },
+                    }}
+                  >
+                    <Typography
+                      fontSize="15px"
+                      fontWeight="500"
+                      sx={{ border: "1px solid #000000", padding: "10px" }}
+                    >
+                      {item.gram} gram
+                    </Typography>
+                    <Typography
+                      fontSize="15px"
+                      fontWeight="500"
+                      sx={{ border: "1px solid #000000", padding: "10px" }}
+                    >
+                      Rs {item.price}/-
+                    </Typography>
+                  </Box>
+                </Box>
               </Box>
             </>
           ))}

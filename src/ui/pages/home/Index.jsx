@@ -605,11 +605,11 @@ const Home = () => {
               >
                 'Divyashikha Gupta' – 'CEO & Managing Director' – 'Stalwart
                 World Group' – Awarded as the
-                <span className="bluecol">
+                <span className="redcol">
                   {` ' World’s Greatest Leaders 2021-22 ' `}
                 </span>
                 & 'Stalwart World' - Awarded as
-                <span className="bluecol">{` ' World's Greatest Brand 2021-22 ' `}</span>
+                <span className="redcol">{` ' World's Greatest Brand 2021-22 ' `}</span>
                 at the annual summit of AsiaOne.
               </Typography>
             </div>

@@ -520,9 +520,9 @@ const Home = () => {
             sx={{
               textAlign: "center",
               // paddingTop: "50px",
-              paddingLeft: "20px",
-              paddingRight: "28px",
-              paddingBottom: "50px",
+              paddingLeft: "10px",
+              paddingRight: "15px",
+              paddingBottom: "30px",
               background: "linear-gradient(180deg, #fff, #fff, #4a4a4a)",
             }}
           >
@@ -531,11 +531,11 @@ const Home = () => {
                 sx={{
                   fontSize: { md: "24px", xs: "20px" },
                   color: "#F1592A",
-                  // background: "rgba(255,255,255,0.2)",
+                  marginBottom: 2,
                 }}
                 fontWeight="700"
               >
-                ASIAONE
+                Awarded at Asiaone Annual summit 2021-22
               </Typography>
             </div>
             <Grid
@@ -549,8 +549,8 @@ const Home = () => {
             >
               <Grid
                 item
-                xl="6"
-                md="6"
+                xl="5"
+                md="5"
                 xs="12"
                 sx={{
                   // paddingLeft: { md: "40px", xs: "0px" },
@@ -572,8 +572,26 @@ const Home = () => {
               </Grid>
               <Grid
                 item
-                xl="6"
-                md="6"
+                xl="2"
+                md="2"
+                xs="12"
+                sx={{
+                  // paddingLeft: { md: "40px", xs: "0px" },
+                  paddingTop: { md: "0px", xs: "0px" },
+                  // paddingBottom: { md: "80px", xs: "20px" },
+                }}
+              >
+                <img
+                  src={require("../../assets/home/asiaone.jpg")}
+                  alt=""
+                  style={{ width: "90px", height: "90px" }}
+                  // className="img-plate"
+                />
+              </Grid>
+              <Grid
+                item
+                xl="5"
+                md="5"
                 xs="12"
                 sx={{
                   // paddingLeft: { md: "0px", xs: "0px" },

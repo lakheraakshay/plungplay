@@ -32,6 +32,7 @@ const Footer = () => {
               >
                 Copyright 2019 The Stalwart Company. All Rights Reserved.
               </Typography>
+              {/* <br /> */}
               <Typography
                 sx={{ fontSize: "16px", fontWeight: "500", color: "#fff" }}
               >
@@ -44,8 +45,8 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item xl="4" md="4" xs="12">
-              <br />
-              <br />
+              {/* <br /> */}
+              {/* <br /> */}
               <Stack
                 direction="row"
                 divider={
@@ -91,7 +92,7 @@ const Footer = () => {
                 </Box>
               </Stack>
               <br />
-              <br />
+              {/* <br /> */}
               <Stack direction="row" spacing={3} flexWrap="wrap">
                 <Box>
                   <img
@@ -118,6 +119,23 @@ const Footer = () => {
                   />
                 </Box>
               </Stack>
+              <br />
+              <Typography sx={{ fontSize: "14.5px", color: "#fff" }}>
+                <span style={{ fontWeight: "bold" }}>Visit Us</span> : 143-147,
+                1st Floor, IJMIMA building, Mindspace Opposite Interface
+                Building, behind Goregaon Sports Complex, Malad West, Mumbai,
+                Maharashtra - 400064
+              </Typography>
+              <br />
+
+              <Typography sx={{ fontSize: "15px", color: "#fff" }}>
+                {`Designed and Developed by `}
+                <span
+                  style={{ fontWeight: "bold", textDecoration: "underline" }}
+                >
+                  STRIX DIGITAL
+                </span>
+              </Typography>
             </Grid>
           </Grid>
         </Container>

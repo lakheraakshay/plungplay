@@ -33,6 +33,7 @@ const Manufacturer = () => {
         sx={{ marginTop: "-8px" }}
       >
         <Grid item xl="7" md="7" xs="12">
+          <br />
           <img
             src={require("../../assets/home/Manufacturer.png")}
             alt=""

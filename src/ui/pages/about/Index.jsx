@@ -7,6 +7,13 @@ import Team from "./Team";
 const About = () => {
   return (
     <>
+      <div>
+        <img
+          src={require("../../assets/home/aboutus.png")}
+          alt=""
+          style={{ width: "100%" }}
+        />
+      </div>
       <Box sx={{ position: "relative" }}>
         <Container fixed>
           <Grid container>
@@ -17,14 +24,14 @@ const About = () => {
               xs="12"
               sx={{ padding: { md: "30px 50px 0 0", xs: "20px" } }}
             >
-              <Typography fontSize="32px" fontWeight="700" color="#323131">
+              {/* <Typography fontSize="32px" fontWeight="700" color="#323131">
                 About Us
               </Typography>
               <img src={require("../../assets/commons/line.png")} alt="" />
 
               <br />
-              <br />
-              <Typography fontSize="20px" fontWeight="500" color="#323131">
+              <br /> */}
+              <Typography fontSize="19.5px" fontWeight="400" color="#323131">
                 <span className="colred">
                   Stalwart Business Consortium LLP (SBCL)
                 </span>{" "}
@@ -41,7 +48,7 @@ const About = () => {
                 Places.'
               </Typography>
               <br />
-              <Typography fontSize="20px" fontWeight="500" color="#323131">
+              <Typography fontSize="19.5px" fontWeight="400" color="#323131">
                 {/* <b> AT STALWART, WE ARE BUILDING:</b> */}
                 India’s fastest growing
                 <span className="redcol"> 'Route to Market' </span>
@@ -58,13 +65,13 @@ const About = () => {
               <img
                 src={require("../../assets/home/ouraproach.png")}
                 alt=""
-                style={{ width: "100%", marginTop: "6rem" }}
+                style={{ width: "100%", marginTop: "0rem" }}
               />
             </Grid>
           </Grid>
         </Container>
       </Box>
-{/* 
+      {/* 
       <Container fixed sx={{ margin: "40px auto" }}>
         <Grid
           container
@@ -159,10 +166,22 @@ const About = () => {
             style={{ width: '100%' }}
           />
         </Grid> */}
-        <Grid item xl="10" md="10" xs="12" sx={{ background: "#F6F6F6", marginTop: 5 }}>
+        <Grid
+          item
+          xl="10"
+          md="10"
+          xs="12"
+          sx={{ background: "#F6F6F6", marginTop: 5 }}
+        >
           <Box sx={{ padding: { md: "0px 30px 0px 40px", xs: "20px" } }}>
             <Typography fontSize="19px" color="#323131" padding="20px">
-              <div style={{ fontWeight: "bold", marginBottom: "20px", fontSize: 25 }}>
+              <div
+                style={{
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                  fontSize: 25,
+                }}
+              >
                 At Stalwart, we are building:
               </div>
               <ul>

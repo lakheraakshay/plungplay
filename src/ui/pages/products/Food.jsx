@@ -22,10 +22,17 @@ const Food = () => {
       price: "149",
     },
     {
-      price: "149",
-    },
-    {
-      price: "169",
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
     },
     {
       isMultiple: true,
@@ -41,12 +48,6 @@ const Food = () => {
       ],
     },
     {
-      price: "69",
-    },
-    {
-      price: "149",
-    },
-    {
       isMultiple: true,
       Fields: [
         {
@@ -59,6 +60,30 @@ const Food = () => {
         },
       ],
     },
+    {
+      isMultiple: true,
+      Fields: [
+        {
+          gram: "200",
+          price: "69",
+        },
+        {
+          gram: "500",
+          price: "149",
+        },
+        {
+          gram: "5",
+          price: "999",
+        },
+      ],
+    },
+    {
+      price: "149",
+    },
+    {
+      price: "149",
+    },
+    
     {
       price: "159",
     },
@@ -74,18 +99,9 @@ const Food = () => {
     {
       price: "149",
     },
+   
     {
-      isMultiple: true,
-      Fields: [
-        {
-          gram: "500",
-          price: "149",
-        },
-        {
-          gram: "5",
-          price: "999",
-        },
-      ],
+      price: "169",
     },
     {
       price: "169",
@@ -112,22 +128,9 @@ const Food = () => {
       price: "159",
     },
     {
-      isMultiple: true,
-      Fields: [
-        {
-          gram: "500",
-          price: "149",
-        },
-        {
-          gram: "200",
-          price: "69",
-        },
-        {
-          gram: "5",
-          price: "999",
-        },
-      ],
+      price: "69",
     },
+    
   ]);
   const [sauces, setSauces] = React.useState([
     {
@@ -438,7 +441,7 @@ const Food = () => {
                               padding: "10px",
                             }}
                           >
-                            {inItem.gram} gram
+                            {inItem.gram} {inItem.gram > 10 ? "gram" : "kg"}
                           </Typography>
                           <Typography
                             fontSize="15px"
@@ -605,7 +608,7 @@ const Food = () => {
                               padding: "10px",
                             }}
                           >
-                            {inItem.gram} gram
+                            {inItem.gram} {inItem.gram > 10 ? "gram" : "kg"}
                           </Typography>
                           <Typography
                             fontSize="15px"

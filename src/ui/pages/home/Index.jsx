@@ -311,7 +311,7 @@ const Home = () => {
               paddingLeft: { md: "50px", xs: "10px" },
               paddingRight: { md: "50px", xs: "10px" },
               paddingTop: { md: "50px", xs: "10px" },
-              paddingBottom: { md: "0", xs: "10px" },
+              paddingBottom: { md: "0px", xs: "0px" },
             }}
           >
             <Grid
@@ -531,11 +531,11 @@ const Home = () => {
                 sx={{
                   fontSize: { md: "22px", xs: "18px" },
                   color: "#F1592A",
-                  marginBottom: 2,
+                  marginBottom: 3,
                 }}
                 fontWeight="700"
               >
-                'Stalwart World' - Awarded as <br /> 'World's Greatest Brand 2021-22'
+                Awarded at Asiaone Annual summit 2021-22
               </Typography>
             </div>
             <Grid
@@ -565,8 +565,8 @@ const Home = () => {
                     style={{ width: "250px", marginBottom: 15 }}
                     className="img-plate"
                   />
-                  <Typography fontSize="20px" fontWeight="600">
-                    World’s Greatest Brand
+                  <Typography fontSize="18.5px" fontWeight="600">
+                    Stalwart World <br /> 'World's Greatest Brand 2021-22'
                   </Typography>
                 </div>
               </Grid>
@@ -605,18 +605,18 @@ const Home = () => {
                     style={{ width: "250px", marginBottom: 15 }}
                     className="img-plate"
                   />
-                  <Typography fontSize="20px" fontWeight="600">
-                    World’s Greatest Leader
+                  <Typography fontSize="18px" fontWeight="600">
+                    Divyashikha Gupta-CEO & MD <br />'World’s Greatest Leaders
+                    2021-22'
                   </Typography>
                 </div>
               </Grid>
             </Grid>
-            <div>
+            {/* <div>
               <Typography
                 sx={{
                   fontSize: { md: "18px", xs: "16px" },
                   color: "#070707",
-                  // background: "rgba(255,255,255,0.2)",
                 }}
                 fontWeight="700"
               >
@@ -626,7 +626,7 @@ const Home = () => {
                   {` ' World’s Greatest Leaders 2021-22 ' `}
                 </span>
               </Typography>
-            </div>
+            </div> */}
           </Grid>
         </Grid>
       </div>

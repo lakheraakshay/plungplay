@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Box, Divider, TextField, Button } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
 import { useStyles } from "./Style";
 
 const Food = () => {
@@ -83,7 +85,7 @@ const Food = () => {
     {
       price: "149",
     },
-    
+
     {
       price: "159",
     },
@@ -99,7 +101,7 @@ const Food = () => {
     {
       price: "149",
     },
-   
+
     {
       price: "169",
     },
@@ -130,7 +132,6 @@ const Food = () => {
     {
       price: "69",
     },
-    
   ]);
   const [sauces, setSauces] = React.useState([
     {
@@ -736,6 +737,21 @@ const Food = () => {
           </Typography>
           <br />
           <Typography gutterBottom fontSize="15px" color="initial">
+            Name
+          </Typography>
+          <TextField
+            id=""
+            label=""
+            placeholder="Enter your name"
+            variant="outlined"
+            sx={{
+              width: "100%",
+              background: "#fff",
+              borderRadius: "6px",
+            }}
+          />
+          <div style={{ height: 15 }} />
+          <Typography gutterBottom fontSize="15px" color="initial">
             Email Id
           </Typography>
           <TextField
@@ -766,19 +782,16 @@ const Food = () => {
           />
           <div style={{ height: 15 }} />
           <Typography gutterBottom fontSize="15px" color="initial">
-            Product
+            Nature of Business
           </Typography>
-          <TextField
-            id=""
-            label=""
-            placeholder="Enter product name"
-            variant="outlined"
-            sx={{
-              width: "100%",
-              background: "#fff",
-              borderRadius: "6px",
-            }}
-          />
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+          >
+            <MenuItem value={20}>Manufacturer</MenuItem>
+            <MenuItem value={30}>Distributor</MenuItem>
+          </Select>
+
           <div style={{ height: 32 }} />
 
           <Box sx={{ textAlign: "center" }}>

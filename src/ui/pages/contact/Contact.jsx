@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 import Stack from "@mui/material/Stack";
 import CircularProgress from "@mui/material/CircularProgress";
 import Snackbar from "@mui/material/Snackbar";
-import { Link } from "react-router-dom";
 
 const initialForm = { name: "", email: "", contact: "", message: "" };
 const Contact = () => {

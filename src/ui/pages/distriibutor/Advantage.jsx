@@ -33,10 +33,10 @@ const Advantage = () => {
             src={require("../../assets/home/stalwartadvantage2.png")}
             alt=""
             style={{ width: "100%" }}
-          />
+          /> 
         </Grid>
         <Grid item xl="4" md="4" xs="12" style={{ background: "#f6f6f6" }}>
-          <Box sx={{ padding: { md: "30px", xs: "20px" } }}>
+          <Box sx={{ padding: { md: "29.5px", xs: "20px" } }}>
             <Typography
               fontSize="19px"
               color="#000"

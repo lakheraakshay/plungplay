@@ -109,8 +109,8 @@ const PersonalCare = () => {
           </Grid>
           <Grid
             item
-            xl="9"
-            md="9"
+            xl="7"
+            md="7"
             xs="12"
             sx={{
               paddingLeft: { md: "50px", xs: "10px" },

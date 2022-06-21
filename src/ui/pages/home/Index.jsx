@@ -535,7 +535,7 @@ const Home = () => {
                 }}
                 fontWeight="700"
               >
-                Awarded at Asiaone Annual summit 2021-22
+                'Stalwart World' - Awarded as <br /> 'World's Greatest Brand 2021-22'
               </Typography>
             </div>
             <Grid
@@ -625,9 +625,6 @@ const Home = () => {
                 <span className="bluecol">
                   {` ' World’s Greatest Leaders 2021-22 ' `}
                 </span>
-                & 'Stalwart World' - Awarded as
-                <span className="bluecol">{` ' World's Greatest Brand 2021-22 ' `}</span>
-                at the annual summit of AsiaOne.
               </Typography>
             </div>
           </Grid>

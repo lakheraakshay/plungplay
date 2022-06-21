@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box } from "@mui/material/";
 import Typography from "@mui/material/Typography";
 import sv from "../../assets/home/sv.jpeg";
-import pramod from "../../assets/home/pramod1.jpg";
+import pramod from "../../assets/home/pramod2.jpeg";
 import aditya from "../../assets/home/aditya2.jpg";
 import divya from "../../assets/home/divya.jpeg";
 

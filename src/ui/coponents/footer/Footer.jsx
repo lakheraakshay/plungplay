@@ -77,7 +77,7 @@ const Footer = () => {
                     variant="body1"
                     color="#FFF"
                   >
-                    Careers
+                    Join Us
                   </Typography>
                 </Box>
                 <Box>

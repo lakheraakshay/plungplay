@@ -429,7 +429,7 @@ const Food = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width:{md:'400',xs:'300px'},
     background:
       "linear-gradient(115.91deg, rgba(192, 192, 192, 0.16) 0%, rgba(229, 229, 229, 0.06) 100%)",
     backdropFilter: "blur(50px)",
@@ -464,6 +464,7 @@ const Food = () => {
         <img
           src={require("../../assets/home/prodbg.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>
@@ -485,7 +486,7 @@ const Food = () => {
         <Divider />
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Pasta
         </Typography>
         <br />
@@ -587,7 +588,7 @@ const Food = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Healthy Snacks
         </Typography>
         <br />
@@ -669,7 +670,7 @@ const Food = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Sauces
         </Typography>
         <br />
@@ -751,7 +752,7 @@ const Food = () => {
         </Box>
         {/* <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Evolve
         </Typography>
         <br />
@@ -789,7 +790,7 @@ const Food = () => {
         </Box> */}
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Fruit Spreads
         </Typography>
         <br />

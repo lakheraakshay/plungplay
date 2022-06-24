@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => ({
       boxShadow: "0px 49px 50px -33px rgba(0, 0, 0, 0.25)",
     },
     [theme.breakpoints.down(600)]: {
-      width: "100% ",
+      width: "50% ",
     },
   },
   hoeverContainer: {

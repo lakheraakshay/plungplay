@@ -49,7 +49,9 @@ const Details = () => {
     return (
         <>
             <div>
-                <img src={require("../../assets/home/prodbg.png")} alt="" style={{ width: '100%' }} />
+                <img src={require("../../assets/home/prodbg.png")} alt="" style={{ width: '100%' }}
+          className="banner-image"
+          />
             </div>
             <Container fixed sx={{ margin: { md: '50px auto' } }}>
                 <Typography fontSize="32px" fontWeight="700" color="initial" >

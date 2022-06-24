@@ -10,7 +10,7 @@ const Footer = () => {
         sx={{
           height: "auto",
           backgroundColor: "#4A4A4A",
-          padding: { md: "70px", xs: "30px" },
+          padding: { md: "70px 70px 30px 70px", xs: "30px" },
         }}
       >
         <Container fixed>
@@ -44,7 +44,17 @@ const Footer = () => {
                 organization
               </Typography>
             </Grid>
-            <Grid item xl="4" md="4" xs="12">
+            <Grid item xl="3" md="3" xs="12">
+              <br />
+              <Typography sx={{ fontSize: "14.5px", color: "#fff" }}>
+                <span style={{ fontWeight: "bold" }}>Visit Us</span> : 143-147,
+                1st Floor, IJMIMA building, Mindspace Opposite Interface
+                Building, behind Goregaon Sports Complex, Malad West, Mumbai,
+                Maharashtra - 400064
+              </Typography>
+              <br /> 
+            </Grid>
+            <Grid item xl="3" md="3" xs="12">
               {/* <br /> */}
               {/* <br /> */}
               <Stack
@@ -119,16 +129,11 @@ const Footer = () => {
                   />
                 </Box>
               </Stack>
-              <br />
-              <Typography sx={{ fontSize: "14.5px", color: "#fff" }}>
-                <span style={{ fontWeight: "bold" }}>Visit Us</span> : 143-147,
-                1st Floor, IJMIMA building, Mindspace Opposite Interface
-                Building, behind Goregaon Sports Complex, Malad West, Mumbai,
-                Maharashtra - 400064
-              </Typography>
-              <br />
-
-              <Typography sx={{ fontSize: "15px", color: "#fff" }}>
+            </Grid>
+          </Grid>
+          </Container>
+          <br/>
+          <Typography sx={{ fontSize: "15px", color: "#fff" ,textAlign: "center" }}>
                 {`Designed and Developed by `}
                 <span
                   style={{ fontWeight: "bold", textDecoration: "underline" }}
@@ -136,9 +141,6 @@ const Footer = () => {
                   STRIX DIGITAL
                 </span>
               </Typography>
-            </Grid>
-          </Grid>
-        </Container>
       </Box>
     </>
   );

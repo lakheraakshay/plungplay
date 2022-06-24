@@ -131,7 +131,7 @@ const Beaverage = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width:{md:'400',xs:'300px'},
     background:
       "linear-gradient(115.91deg, rgba(192, 192, 192, 0.16) 0%, rgba(229, 229, 229, 0.06) 100%)",
     backdropFilter: "blur(50px)",
@@ -167,6 +167,7 @@ const Beaverage = () => {
           src={require("../../assets/home/prodbg.png")}
           alt=""
           style={{ width: "100%" }}
+          className="banner-image"
         />
       </div>
       <Container fixed sx={{ margin: { md: "50px auto" } }}>
@@ -187,7 +188,7 @@ const Beaverage = () => {
         <Divider />
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Cocktail & Mocktail
         </Typography>
         <br />
@@ -202,7 +203,7 @@ const Beaverage = () => {
         >
           {cockmock.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/cockmock1 (${i + 1}).png`)}
                   alt=""
@@ -225,7 +226,7 @@ const Beaverage = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Cold Coffee
         </Typography>
         <br />
@@ -240,7 +241,7 @@ const Beaverage = () => {
         >
           {coffee.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/coldcofee (${i + 1}).jpg`)}
                   alt=""
@@ -263,7 +264,7 @@ const Beaverage = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Mojitos
         </Typography>
         <br />
@@ -278,7 +279,7 @@ const Beaverage = () => {
         >
           {mojito.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/mojito ${i + 1}.jpeg`)}
                   alt=""
@@ -300,7 +301,7 @@ const Beaverage = () => {
             </>
           ))}
         </Box>
-        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Juice
         </Typography>
         <br />
@@ -315,7 +316,7 @@ const Beaverage = () => {
         >
           {juice.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: {md:"260px",xs:"100%"},textAlign:{md:'left',xs:'center'}  }}>
                 <img
                   src={require(`../../assets/home/juice (${i + 1}).jpg`)}
                   alt=""
@@ -352,14 +353,14 @@ const Beaverage = () => {
             xl="3"
             md="3"
             xs="12"
-            // sx={{
-            //   paddingLeft: { md: "50px", xs: "10px" },
-            //   paddingRight: { md: "50px", xs: "10px" },
-            //   paddingTop: { md: "50px", xs: "10px" },
-            //   paddingBottom: { md: "0", xs: "10px" },
-            // }}
+          // sx={{
+          //   paddingLeft: { md: "50px", xs: "10px" },
+          //   paddingRight: { md: "50px", xs: "10px" },
+          //   paddingTop: { md: "50px", xs: "10px" },
+          //   paddingBottom: { md: "0", xs: "10px" },
+          // }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Insta Green Tea
             </Typography>
             <br />
@@ -374,7 +375,7 @@ const Beaverage = () => {
             >
               {/* {new Array(8).fill().map(() => (
             <> */}
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require("../../assets/home/Insta-Green-Tea-White_OPEN1.jpg")}
                   alt=""
@@ -409,7 +410,7 @@ const Beaverage = () => {
               // paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Juice
             </Typography>
             <br />
@@ -424,7 +425,7 @@ const Beaverage = () => {
             >
               {juice.map((item, i) => (
                 <>
-                  <Box sx={{ width: "260px" }}>
+                  <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                     <img
                       src={require(`../../assets/home/juice (${i + 1}).jpg`)}
                       alt=""
@@ -449,7 +450,7 @@ const Beaverage = () => {
         </Grid>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Iced Tea
         </Typography>
         <br />
@@ -464,7 +465,7 @@ const Beaverage = () => {
         >
           {icedTea.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/icetea${i + 1}.png`)}
                   alt=""
@@ -487,7 +488,7 @@ const Beaverage = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Kombucha
         </Typography>
         <br />
@@ -502,7 +503,7 @@ const Beaverage = () => {
         >
           {kombucha.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/kombucha${i + 1}.png`)}
                   alt=""
@@ -525,7 +526,7 @@ const Beaverage = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Probiotic Drink
         </Typography>
         <br />
@@ -540,7 +541,7 @@ const Beaverage = () => {
         >
           {probiotic.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/probiotic${i + 1}.png`)}
                   alt=""

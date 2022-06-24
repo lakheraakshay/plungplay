@@ -10,6 +10,7 @@ const Distributor = () => {
           src={require("../../assets/home/distributorheader.png")}
           alt=""
           style={{ width: "100%" }}
+          className="banner-image"
         />
       </div>
       <Grid

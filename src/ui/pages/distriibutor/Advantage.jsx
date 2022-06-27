@@ -9,6 +9,7 @@ const Advantage = () => {
         <img
           src={require("../../assets/home/stalwartadvantage.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>

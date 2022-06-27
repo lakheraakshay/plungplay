@@ -46,6 +46,7 @@ const Products = () => {
         <img
           src={require("../../assets/home/productheader.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>

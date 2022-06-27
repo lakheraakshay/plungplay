@@ -8,6 +8,7 @@
 body {
   font-family: Poppins;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -21,17 +22,27 @@ body {
   height: max-content;
 }
 
-.bluecol{
+.bluecol {
   color: #13104B;
   /* color:#323131; */
 }
-.redcol {color: #F1592A;}
-.blueback{
-  background:#1D1964;
+
+.redcol {
+  color: #F1592A;
+}
+
+.blueback {
+  background: #1D1964;
   border: 1px solid #1D1964 !important;
 }
 
-.whiteback{
-  background:#fff;
+.whiteback {
+  background: #fff;
   /* border: 1px solid #1D1964 !important; */
+}
+
+@media only screen and (max-width: 425px) {
+  .banner-image {
+    height: 100px;
+  }
 }

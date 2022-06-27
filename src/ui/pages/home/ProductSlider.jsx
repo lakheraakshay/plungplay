@@ -45,7 +45,7 @@ const ProductSlider = () => {
       <Box sx={{ background: "#F1592A", padding: { md: "50px ", xs: "auto" } }}>
         <Container fixed>
           <Slider {...settings}>
-            {new Array(8).fill("").map((item, i) => (
+            {new Array(21).fill("").map((item, i) => (
               <>
                 <Box  >
                   <img

@@ -19,6 +19,7 @@ const Manufacturer = () => {
         <img
           src={require("../../assets/home/mainbrands.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>

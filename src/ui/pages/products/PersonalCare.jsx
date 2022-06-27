@@ -101,7 +101,7 @@ const PersonalCare = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
+    width:{md:'400',xs:'300px'},
     background:
       "linear-gradient(115.91deg, rgba(192, 192, 192, 0.16) 0%, rgba(229, 229, 229, 0.06) 100%)",
     backdropFilter: "blur(50px)",
@@ -136,11 +136,12 @@ const PersonalCare = () => {
         <img
           src={require("../../assets/home/prodbg.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>
       <Container fixed sx={{ margin: { md: "50px auto" } }}>
-      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography fontSize="32px" fontWeight="700" color="initial">
             Categories - Personal Care
           </Typography>
@@ -171,14 +172,14 @@ const PersonalCare = () => {
             xl="3"
             md="3"
             xs="12"
-            // sx={{
-            //   paddingLeft: { md: "50px", xs: "10px" },
-            //   paddingRight: { md: "50px", xs: "10px" },
-            //   paddingTop: { md: "50px", xs: "10px" },
-            //   paddingBottom: { md: "0", xs: "10px" },
-            // }}
+          // sx={{
+          //   paddingLeft: { md: "50px", xs: "10px" },
+          //   paddingRight: { md: "50px", xs: "10px" },
+          //   paddingTop: { md: "50px", xs: "10px" },
+          //   paddingBottom: { md: "0", xs: "10px" },
+          // }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Shampoo
             </Typography>
             <br />
@@ -191,7 +192,7 @@ const PersonalCare = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/shampoo 1.png`)}
                   alt=""
@@ -223,7 +224,8 @@ const PersonalCare = () => {
               // paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Hair Oil
             </Typography>
             <br />
@@ -238,7 +240,7 @@ const PersonalCare = () => {
             >
               {coconutOil.map((item, i) => (
                 <>
-                  <Box sx={{ width: "260px" }}>
+                  <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                     <img
                       src={require(`../../assets/home/coconutoil ${i + 1}.png`)}
                       alt=""
@@ -263,7 +265,7 @@ const PersonalCare = () => {
         </Grid>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Lip Scrub , Balm
         </Typography>
         <br />
@@ -278,7 +280,7 @@ const PersonalCare = () => {
         >
           {lipScrub.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/lipscrub${i + 1}.png`)}
                   alt=""
@@ -301,7 +303,7 @@ const PersonalCare = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
           Body Wash
         </Typography>
         <br />
@@ -316,7 +318,7 @@ const PersonalCare = () => {
         >
           {bodyWash.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require(`../../assets/home/bodywash ${i + 1}.png`)}
                   alt=""
@@ -339,7 +341,7 @@ const PersonalCare = () => {
         </Box>
         <br />
         <br />
-        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Coconut Oil
         </Typography>
         <br />
@@ -354,7 +356,7 @@ const PersonalCare = () => {
         >
           {coconutOil.map((item, i) => (
             <>
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: {md:"260px",xs:"100%"},textAlign:{md:'left',xs:'center'}  }}>
                 <img
                   src={require(`../../assets/home/coconutoil ${i + 1}.png`)}
                   alt=""
@@ -398,7 +400,7 @@ const PersonalCare = () => {
               paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Rose Water
             </Typography>
             <br />
@@ -411,7 +413,7 @@ const PersonalCare = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require("../../assets/home/rosewater.png")}
                   alt=""
@@ -443,7 +445,7 @@ const PersonalCare = () => {
               paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Scrub Cream
             </Typography>
             <br />
@@ -456,7 +458,7 @@ const PersonalCare = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require("../../assets/home/scrubcream.png")}
                   alt=""
@@ -488,7 +490,7 @@ const PersonalCare = () => {
               paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Mud Pack
             </Typography>
             <br />
@@ -501,7 +503,7 @@ const PersonalCare = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require("../../assets/home/mudpack.jpeg")}
                   alt=""
@@ -533,7 +535,7 @@ const PersonalCare = () => {
               paddingBottom: { md: "0", xs: "10px" },
             }}
           >
-            <Typography fontSize="24px" fontWeight="500" color="initial">
+            <Typography sx={{ fontSize: { md: '24px', xs: '20px' } }} fontWeight="500" color="initial">
               Sunscreen
             </Typography>
             <br />
@@ -546,7 +548,7 @@ const PersonalCare = () => {
                 flexWrap: "wrap",
               }}
             >
-              <Box sx={{ width: "260px" }}>
+              <Box sx={{ width: { md: "260px", xs: "100%" }, textAlign: { md: 'left', xs: 'center' } }}>
                 <img
                   src={require("../../assets/home/sunscream.png")}
                   alt=""
@@ -569,7 +571,7 @@ const PersonalCare = () => {
         </Grid>
         <br />
         <br />
-        {/* <Typography fontSize="24px" fontWeight="500" color="initial">
+        {/* <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Scrub Cream
         </Typography>
         <br />
@@ -582,7 +584,7 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          <Box sx={{ width: "260px" }}>
+          <Box sx={{ width: {md:"260px",xs:"100%"},textAlign:{md:'left',xs:'center'}  }}>
             <img
               src={require("../../assets/home/scrubcream.png")}
               alt=""
@@ -603,7 +605,7 @@ const PersonalCare = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Mud Pack
         </Typography>
         <br />
@@ -616,7 +618,7 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          <Box sx={{ width: "260px" }}>
+          <Box sx={{ width: {md:"260px",xs:"100%"},textAlign:{md:'left',xs:'center'}  }}>
             <img
               src={require("../../assets/home/mudpack.jpeg")}
               alt=""
@@ -637,7 +639,7 @@ const PersonalCare = () => {
         </Box>
         <br />
         <br />
-        <Typography fontSize="24px" fontWeight="500" color="initial">
+        <Typography   sx={{fontSize:{md:'24px',xs:'20px'}}} fontWeight="500" color="initial">
           Sunscreen
         </Typography>
         <br />
@@ -650,7 +652,7 @@ const PersonalCare = () => {
             flexWrap: "wrap",
           }}
         >
-          <Box sx={{ width: "260px" }}>
+          <Box sx={{ width: {md:"260px",xs:"100%"},textAlign:{md:'left',xs:'center'}  }}>
             <img
               src={require("../../assets/home/sunscream.png")}
               alt=""

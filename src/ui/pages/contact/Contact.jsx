@@ -100,29 +100,31 @@ const Contact = () => {
         <img
           src={require("../../assets/home/contactusheader.png")}
           alt=""
+          className="banner-image"
           style={{ width: "100%" }}
         />
       </div>
       <Container fixed sx={{ margin: { md: "50px auto" } }}>
         <Grid
           container
-          spacing={0}
+          spacing={2}
           direction="row"
           justifyContent="space-between"
           alignItems="center"
           alignContent="center"
-          wrap="wrap"
+        flexWrap="wrap-reverse"
           sx={{ marginTop: "-8px" }}
         >
           <Grid item xl="5" md="5" xs="12">
+            <br />
             <a
               target="_blank"
               style={{textDecoration: "none"}}
               href="https://www.google.com/maps/place/Stalwart+World/@19.1834447,72.8326363,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7b72aaef89507:0x3d602802565715f9!8m2!3d19.1834447!4d72.8326363"
             >
-              <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
+              <Box sx={{ display: "flex", alignItems:{md: "center",xs:'flex-start'}, gap: "20px" }}>
                 <img src={require("../../assets/home/address.png")} alt="" />
-                <Typography gutterBottom fontSize="20px" color="initial">
+                <Typography gutterBottom fontSize="16px" color="initial">
                   143-147, 1st Floor, IJMIMA building, Mindspace Opposite
                   Interface Building, behind Goregaon Sports Complex, Malad
                   West, Mumbai, Maharashtra - 400064
@@ -132,31 +134,32 @@ const Contact = () => {
             <br />
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img src={require("../../assets/home/contact (2).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                sales@stalwartworld.com
+              <Typography gutterBottom fontSize="16px" color="initial">
+                divya@stalwartworld.com
               </Typography>
             </Box>
             <br />
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img src={require("../../assets/home/contact (2).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
+              <Typography gutterBottom fontSize="16px" color="initial">
                 rajasi@stalwartworld.com
               </Typography>
             </Box>
             <br />
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img src={require("../../assets/home/contact (1).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                +91-97665 64158
+              <Typography gutterBottom fontSize="16px" color="initial">
+                +91-98198 60110
               </Typography>
             </Box>
             <br />
             <Box sx={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img src={require("../../assets/home/contact (1).png")} alt="" />
-              <Typography gutterBottom fontSize="20px" color="initial">
-                +91-89833 81662
+              <Typography gutterBottom fontSize="16px" color="initial">
+                +91-97665 64158
               </Typography>
             </Box>
+            <br/>
           </Grid>
           <Grid item xl="6" md="6" xs="12">
             <Box
@@ -172,7 +175,7 @@ const Contact = () => {
               <br />
               <form onSubmit={onSubmit}>
                 <div>
-                  <Typography gutterBottom fontSize="20px" color="initial">
+                  <Typography gutterBottom fontSize="16px" color="initial">
                     Name
                   </Typography>
                   <TextField
@@ -191,7 +194,7 @@ const Contact = () => {
                 </div>
                 <br />
                 <div>
-                  <Typography gutterBottom fontSize="20px" color="initial">
+                  <Typography gutterBottom fontSize="16px" color="initial">
                     Email
                   </Typography>
                   <TextField
@@ -210,7 +213,7 @@ const Contact = () => {
                 </div>
                 <br />
                 <div>
-                  <Typography gutterBottom fontSize="20px" color="initial">
+                  <Typography gutterBottom fontSize="16px" color="initial">
                     Contact Number
                   </Typography>
                   <TextField
@@ -229,7 +232,7 @@ const Contact = () => {
                 </div>
                 <br />
                 <div>
-                  <Typography gutterBottom fontSize="20px" color="initial">
+                  <Typography gutterBottom fontSize="16px" color="initial">
                     Message
                   </Typography>
                   <TextField

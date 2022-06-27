@@ -12,6 +12,7 @@ const About = () => {
           src={require("../../assets/home/aboutus.png")}
           alt=""
           style={{ width: "100%" }}
+          className="banner-image"
         />
       </div>
       <Box sx={{ position: "relative" }}>
